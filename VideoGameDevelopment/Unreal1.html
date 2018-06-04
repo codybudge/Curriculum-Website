@@ -24,9 +24,9 @@
 
 <body>
 <!-- Banner -->
-<div class="site-brand-inner has-logo-img no-desc" style="background-color: white"> 
+<div class="site-brand-inner has-logo-img no-desc" style="background-color: white; margin-top: -25px"> 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light"> <a href="../Home.html" class="custom-logo-link" rel="home" itemprop="url"> <img width="250" height="43" src="https://geekolabs.com/wp-content/uploads/2017/12/logo_geeko-line250-1.png" class="custom-logo" alt="Geeko Labs" itemprop="logo"> </a>
+  <nav class="navbar navbar-expand-lg navbar-light"> <a href="../Home.html" class="custom-logo-link" rel="home" itemprop="url"> <img width="250" height="43" src="../Images/logo_geeko-line.png" class="custom-logo" alt="Geeko Labs" itemprop="logo"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> </button>
   </nav>
 </div>
@@ -208,6 +208,7 @@ Quick tip – you can switch between your project in Unreal Engine and the Video
     
 <!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
+<form onsubmit="password(event)">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header row">
@@ -221,7 +222,7 @@ Quick tip – you can switch between your project in Unreal Engine and the Video
         <div class="modal-body">
             <!-- Password Form here -->
           <p>Enter the magic word(s)...</p>
-          <form>
+          
             <div class="form-group">
               <label for="usr">Name:</label>
               <input type="text" class="form-control" id="usr">
@@ -230,33 +231,29 @@ Quick tip – you can switch between your project in Unreal Engine and the Video
               <label for="pwd">Password:</label>
               <input type="password" class="form-control" id="pwd">
             </div>
-          </form>  
+         
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Not quite yet...</button>
-          <a href="Unreal1BF.html"><button type="button" class="btn btn-default">It's Go-Time!</button></a>
+          <button type="submit" class="btn btn-default">It's Go-Time!</button>
         </div>
       </div>
     </div>
+ </form>  
   </div>
    
-<!-- Password Script UNUSED FOR NOW, Add "onClick="passWord()"" to the Go-Time Button to use.-->
+<!-- Password Script -->
 <script>
-function passWord() {
-    var testV = 1;
-    var pass1 = document.getElementById("pwd").value
-    while (testV < 3) {
-            if (!pass1) 
-                history.go(-1);
-            if (pass1.toLowerCase() == "ste@mlearn1ng") {
-                window.open('Unreal1BF.thml');
-                break;
-            } 
-        testV+=1;           
-    }
-    if (pass1.toLowerCase()!="password" & testV ==3) 
-        history.go(-1);
-        return " ";
+function password(e) {
+	e.preventDefault()
+	var usr = document.getElementById('usr').value
+	var pwd = document.getElementById('pwd').value
+	
+if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
+	window.location = "Unreal1BF.html"
+}else{
+	alert('wrong password or username')
+}
 } 
 </script>
     

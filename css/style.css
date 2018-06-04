@@ -118,3 +118,9 @@ button.boss-fight{
     margin: 15px;
 }
 
+.carousel-text {
+    text-shadow: 3px 3px 5px black, -3px -3px 5px black, -3px 3px 5px black, 3px -3px 5px black;
+}
+
+
+
