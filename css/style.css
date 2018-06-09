@@ -127,6 +127,9 @@ button.boss-fight{
 .well {
     margin: 15px;
 }
+div.well{
+    margin: auto;
+}
 
 .carousel-text {
     text-shadow: 3px 3px 5px black, -3px -3px 5px black, -3px 3px 5px black, 3px -3px 5px black;
