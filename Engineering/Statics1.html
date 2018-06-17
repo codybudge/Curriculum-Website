@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<meta charset="utf-8">
+    
+    <!--MODAL IMPORTS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="icon" href="../Images/geeko-app-32x32.jpg">
+<title>Statics 1</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Geeko Styleguide -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/roboto:n2,n9,n4,n5,n7:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Banner -->
+<div class="site-brand-inner has-logo-img no-desc" style="background-color: white"> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light"> <a href="../Home.html" class="custom-logo-link" rel="home" itemprop="url"> <img width="250" height="43" src="../Images/logo_geeko-line.png" class="custom-logo" alt="Geeko Labs" itemprop="logo"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <a href="https://app.geekolabs.com/auth/login" target="_blank"><button class="btn-lg btn-primary" type="button" style="margin-left: 100%; margin-top: 25px">Journal</button></a>
+  </nav>
+</div>    
+    
+<!--Body Content-->
+<div>
+<div class="container-fluid container">
+    <h1>Statics 1 - Intro to Building</h1>
+    <h2>Step 1</h2>
+    <h3>Tools of the Trade</h3>
+    <!-- INTRODUCTION (PRE-VIDEO SETUP) -->
+    <div class="container-fluid row">
+        
+        <div class="col" align="center">
+            <p style="margin-top: 20%">Statics is the study of forces acting on structures that don't move. You can think of it like "static" electricity, which doesn't move until you touch it! But in the case of structures, instead of shocking you, they just fall over. So buckle up, and get ready to make stuff NOT fall over!</p>
+            <p>The building manipulatives that you will use are called Fischertechnik. These are very versatile and can be used and connected in many different ways with their pins and grooves. Notice to the right that there is a Building Block 30. Use the mouse to drag it around and check it out. </p>
+            <p>We always make sure to use the names of the pieces properly, so that instructions are clear, and instructors can be more helpful. </p>
+        </div>
+        <div class="col" align="center"> 
+            <div class="sketchfab-embed-wrapper container-fluid"><iframe width="480" height="360" src="https://sketchfab.com/models/8032f7a3555643e4b99bc9c146ef175d/embed?autospin=0.2&amp;autostart=1&amp;preload=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+        </div> 
+    </div>
+    
+</div> 
+</div>
+<div class="container-fluid container" style="margin-top: 5%">
+    <div class="container-fluid row">
+        <div class="col" align="center">
+            <h3>Are you ready?</h3>
+            <p>Talk to your instructor to show your work, and have them unlock the Boss Fight!</p>
+            <button class="boss-fight" data-toggle="modal" data-target="#myModal"><h3>Proceed?</h3></button>
+        </div>
+    </div>
+</div>   
+
+    
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+<form onsubmit="password(event)">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header row">
+          <div class="col-1">          
+              <button type="button" class="close" data-dismiss="modal" style="margin-top: 10px">&times;</button>
+          </div>
+          <div class="col-11">
+              <h4 class="modal-title">Boss Fight Ahead!</h4>
+          </div>
+        </div>
+        <div class="modal-body">
+            <!-- Password Form here -->
+          <p>Enter the magic word(s)...</p>
+          
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-default">It's Go-Time!</button>
+        </div>
+      </div>
+    </div>
+ </form>  
+  </div>
+   
+<!-- Password Script UNUSED FOR NOW, Add "onClick="passWord()"" to the Go-Time Button to use.-->
+<script>
+function password(e) {
+	e.preventDefault()
+	var usr = document.getElementById('usr').value
+	var pwd = document.getElementById('pwd').value
+	
+if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
+	window.location = "#"
+}else{
+	alert('wrong password or username')
+}
+} 
+    
+function bigImg(x) {
+    x.style.height = "60%";
+    
+}
+
+function normalImg(x) {
+    x.style.height = "50%";
+    
+}
+</script>
+    
+    
+</body>
+</html>
