@@ -51,9 +51,9 @@ h5{
 
 p{
     font-family: roboto !important;
-    font-size: 12px !important;
+    font-size: 15px !important;
     font-stye: normal !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
 	text-decoration-color: #3D3D3D !important;
 }
 
@@ -135,5 +135,8 @@ div.well{
     text-shadow: 3px 3px 5px black, -3px -3px 5px black, -3px 3px 5px black, 3px -3px 5px black;
 }
 
+img.img-gif {
+    margin: auto;
 
+}
 
