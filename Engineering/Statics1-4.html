@@ -43,41 +43,80 @@
     <div style="margin: auto" align="center">
     
     </div>
-    <!--
-    <div class="container-fluid row">
-            <h4 align="center" style="margin: auto">What you'll need:</h4>
-        </div>
-    <div class="container-fluid row" style="margin-bottom: 30px">
-        
-        <div class="col well" align="center" style="margin: 5px">
-            <h5 align="center">Base Plate 120x60</h5>
-            <h5 align="center" style="margin-bottom: 5px" >1x</h5>
-            <div class="sketchfab-embed-wrapper"><iframe width="280" height="180" src="https://sketchfab.com/models/7ba080a519a14d4da50b58e5560afb36/embed?autostart=1&amp;camera=0&amp;preload=1&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
-        </div>
-        <div class="col well" align="center" style="margin: 5px">
-            <h5 align="center">Building Block 30</h5>
-            <h5 align="center" style="margin-bottom: 5px" >10x</h5>
-            <div class="sketchfab-embed-wrapper"><iframe width="280" height="180" src="https://sketchfab.com/models/8032f7a3555643e4b99bc9c146ef175d/embed?autostart=1&amp;preload=1&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
-        </div>
-        <div class="col well" align="center" style="margin: 5px">
-            <h5 align="center">Building Block 15 with 2 Pins</h5>
-            <h5 align="center" style="margin-bottom: 5px">4x</h5>
-            <div class="sketchfab-embed-wrapper"><iframe width="280" height="180" src="https://sketchfab.com/models/04966f544c774f6cb079baabb84bb6d7/embed?autostart=1&amp;preload=1&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
-        </div>
-    </div>
--->
 </div>
 <div class="container-fluid container">
+    <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/1b1c4e0456d94c0ea7b58ed7681ddbe6/embed?autostart=1&amp;camera=0&amp;preload=1&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+</div>
     
+<div class="container-fluid row">
+    <p style = "margin: auto; margin-bottom: 30px">When you have completed the tower's contruction, get your instructor to test it's durability with a 10lb rock. </p>
 </div>
 <div class="container-fluid container">
     <div class="container-fluid row">
         <div class="col" align="center">
             <h3>Are you ready?</h3>
-            <p>Talk to your instructor to show your work, and have them unlock the Boss Fight!</p>
+            <p>On successfully supporting the weight of the 10lb load, you are ready to proceed to the Boss Fight!</p>
             <button class="boss-fight" data-toggle="modal" data-target="#myModal"><h3>Proceed?</h3></button>
         </div>
     </div>
 </div> 
+    
+    
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog" style="margin: auto">
+<form onsubmit="password(event)">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header row">
+          <h4 class="modal-title">Boss Fight Ahead!</h4>
+        </div>
+        <div class="modal-body">
+            <!-- Password Form here -->
+          <p>Enter the magic word(s)...</p>
+          
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-default">It's Go-Time!</button>
+        </div>
+      </div>
+    </div>
+ </form>  
+  </div>
+   
+<!-- Password Script UNUSED FOR NOW, Add "onClick="passWord()"" to the Go-Time Button to use.-->
+<script>
+function password(e) {
+	e.preventDefault()
+	var usr = document.getElementById('usr').value
+	var pwd = document.getElementById('pwd').value
+	
+if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
+	window.location = "Statics1BF.html"
+}else{
+	alert('wrong password or username')
+}
+} 
+    
+function bigImg(x) {
+    x.style.height = "60%";
+    
+}
+
+function normalImg(x) {
+    x.style.height = "50%";
+    
+}
+</script>
+    
 </body>
 </html>
