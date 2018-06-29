@@ -127,6 +127,10 @@ button.boss-fight{
 .well {
     margin: 15px;
 }
+.vcenter {
+    display: flex;
+    align-items: center;
+}
 div.well{
     margin: auto;
 }
