@@ -57,6 +57,12 @@ p{
 	text-decoration-color: #3D3D3D !important;
 }
 
+p.code{
+    font-size: 10px !important;
+    font-weight: 500 !important;
+    margin: 0px !important;
+}
+
 hr{
 	margin-top: 10px !important;
 	margin-bottom: 25px !important;
