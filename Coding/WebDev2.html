@@ -36,33 +36,150 @@
 <!--Body Content-->
 <div>
 <div class="container-fluid container">
-    <h1>Web Development 2 - subtitle</h1>
+    <h1 style="margin-bottom: 30px">Web Development 2 - Intro to IDE's and Stylesheets</h1>
+    <p align="center">How do we type the instructions to send to the computer? Well, we can’t just type it up in an email like we would for anyone else, we must have somewhere to type and create the files. You can use a simple text-editor like Notepad, or you can use a very useful Integrated Development Environment, also called an ‘IDE’. IDE’s provide you with many different tools to assist you in writing, editing, and revising code. For this quest we are going to use an IDE to recreate a famous abstract painting by Piet Mondrian from 1930 called the Composition with Red Blue and Yellow. Creative name huh? </p>
+    <img alt="" class="img-responsive" src="../Images/WebDev/Comp in Red Blue Yellow.jpg">
     <h2>Step 1</h2>
-    <h3>Code</h3>
+    <h3>VISUAL STUDIOS AND HTML</h3>
     <!-- INTRODUCTION (PRE-VIDEO SETUP) -->
     <div class="container-fluid row">
-        <div>
-            <p>Starting step</p>
+        <div class="col-3 vcenter" style="margin-left: 10%"><p align="center">First off we need to create a new folder for our project, name it Mondrian and then right click and open with Visual Studio Code.</p></div>
+        <div class="col vcenter"><img alt="" class="img-responsive" style="max-height: 400px" src="../Images/WebDev/NewProjectFolderVSC.gif"></div>
+    </div>
+    <div class="container-fluid row" style="margin-top: 3%">
+        <p align="center">Next we are going to create the project folders for html and css while adding files that we are going to use later. After creating these, check out your folder in the file browser and you should have the folders with the files we just created.</p>
+    </div>
+    <div class="container-fluid row">
+        <div class="col"><img alt="" class="img-responsive" style="max-height: 400px" src="../Images/WebDev/html+file.gif"></div>
+        <div class="col"><img alt="" class="img-responsive" style="max-height: 400px" src="../Images/WebDev/css+file.gif"></div>
+    </div>
+    <div class="container-fluid row" style="margin-top: 3%">
+        <div class="col vcenter">
+            <p align="center">Now we’re going to start by adding this to our html file,  you’ll recognize the most of the tags from Web Dev 1 but there’s some new ways to organize our code. One of the biggest differences in our code is the indents, this is used to gives us a clearer image of where a section begins and ends. When we open a tag we nest our code in an indent before we close the tag. Our IDE should do this for us, however if it doesn’t you can use the tab key to get the cursor where you want it.  In these indents we also have two new tags the &lt;head&gt; and &lt;body&gt; these are tags we are going to use to seperate titles from headers and paragraphs as well as more stuff down the line. Now navigate to your html file and open it up! Looks pretty plain right?</p>
+        </div>
+        <div class="col">
+            <img alt="" class="img-responsive" style="max-height: 300px" src="../Images/WebDev/step1.png">
         </div>
     </div>
-    
 </div>
 	<hr>
 <div class="container-fluid container">	
 		<h2>Step 2</h2>
-		<h3>FOLLOW ALONG IN YOUR OWN PROJECT</h3>
-	<div class="container-fluid row">
-		
-	</div>
+		<h3>CSS</h3>
+		<div class="container-fluid row">
+		    <p align="center">Now it’s time to write the CSS  file, CSS stands for Cascading Style Sheets and is used to customize how text from our HTML document displays. We’re only going to write a few lines but you’ll notice a lot of difference from HTML syntax. We enclose our h1 styling with curly brackets “{}” because if we didn’t the computer wouldn’t know what section of the html file to style! Don’t worry about the green squiggly line under h1, that’s just the computer letting us know we aren’t doing anything with it yet. </p>
+            <img class="img-responsive" style="margin-top: 0px" alt="" src="../Images/WebDev/cssFirstStep1.png">
+	    </div>
+    <div class="container-fluid row" style="margin-top: 3%">
+        <div class="col vcenter" align="center"><p align="center">Now we’re going to start some coding, be careful not to confuse HTML and CSS syntax because they are different. The most noticeable and important would be the “ ; “ and the end of each line, this is how we tell the code we are ending statement, much like how we use periods to end sentences in writing a story. The text-align function is what we can use better position our text instead of defaulting to the left. The color function seems simple enough but then there’s some letters and numbers mixed in, this is called a hexadecimal color code. Every variation of a color you can think of has its very own hexadecimal color code. Now open up your html file and see the changes! 
+        </p></div>
+        <div class="col vcenter">		    
+            <img class="img-responsive" style="margin-top: -4px" alt="" src="../Images/WebDev/cssFirstStep2.png">
+        </div>
+	    </div>
+    <div class="container-fluid row" style="margin-top: 3%">
+        <p align="center">Wait there aren’t any, are there? That’s because we never told our HTML file to talk to our CSS file! To do this we need to jump back to the html file and add a brand new <link> tag like below.</p>
+        <img class="img-responsive" style="max-height: 250px; margin-top: 0px" alt="" src="../Images/WebDev/htmlStart.png">
+        <p align="center" style="margin-top: 1%">The link tag functions a little differently than the tags we’re use to up to now, in this tag the href tells our html file the location of the css file where rel and type tells us what kind of css file it is. Make sure to save your changes and reload your webpage to see your changes</p>
+    </div>
+    
 </div>
 	<hr>
 <div class="container-fluid container">
 	<h2>STEP 3</h2>
-	<h3>Comlete the quest!</h3>
-    <div class="container-fluid row">
-        <p>Complete each of the videos in order, following along in your project. Tell your instructor when you’ve completed each one, and then continue. When you’ve finished video 11 of this quest, it’s time to attempt the boss fight and earn your experience points!</p>
+	<h3>CANVAS</h3>
+	<div class="container-fluid row">
+        <p align="center">To create our Canvas we are going to add an #id selector to our CSS file. A CSS #id selectors is used to style a single element in html. We are going to name ours #canvas and add the following code into it. This code gives us our off-white canvas like background as well as its size and margins to center it. We are using 400px, or 400 pixels, for our width and height so we can divide up the sections later.  The box-shadow is a new line of code but all we are doing is creating a shadow with a bottom and right side of our canvas with size of 10px each, a blur effect of 1px and setting the color to gray.
+        </p>
+        <img alt="" class="img-responsive" src="../Images/WebDev/CanvasIDSelector.png" style="max-height: 200px; margin-top: 0px">
     </div>
+    <div class="container-fluid row" style="margin-top: 1%">
+        <div class="col-8 vcenter" >
+            <p align="center">Next before we can see our changes we need to add our #canvas to HTML file we are going to do this &lt;div&gt; tags. This tag is a generic container that we can use to to style a whole section of our code. Add this code into your &lt;body&gt; section of code. Once you’ve added this open up your webpage and see your new Canvas!</p>
+        </div>
+        <div class="col vcenter">
+            <img class="img-responsive" alt="" src="../Images/WebDev/CanvasInHTML.png" style="margin-top: 0px; max-height: 200px">
+        </div>
+    </div> 
 </div>
+    
+<div class="container-fluid container">
+	<h2>STEP 3</h2>
+	<h3><em>DIV</em>-IDE AND CONQUER</h3>
+    <div class="container-fluid row">
+        <div class="col vcenter">
+            <p align="center"> Now that we have our canvas set we need to add our boxes. Since we set our canvas to 400 by 400 pixels we’ll be able to easily divide the boxes into rows and columns. Each one will have it’s own CSS #id with a corresponding HTML &lt;div&gt; tag. The image below shows how these divisions will work with their measurements.</p>
+        </div>
+        <div class="col">
+            <img class="img-responsive" alt="" src="../Images/WebDev/mondrianPX.png" style="max-height: 375px; margin-top: 0px">
+        </div>
+    </div>
+    <div class="container-fluid row" style="margin-top: 3%">
+        <p align="center">Before we add all of our rows and columns we need to make sure we have all of the colors we are going to use at our disposal, to do this we are going to add classes to our CSS file. Instead of using a “#” like we did with our id selectors we are going to define our classes with a “.” (a period) . Add these color classes to your CSS file.</p>
+        <img class="img-responsive" alt="" src="../Images/WebDev/CSSColors.png" style="margin-top: 0px; max-height: 300px">
+        <p align="center" style="margin-top: 1%">Next we need to add our top row and bigBox since our canvas has a size of 400px we are going to set our #topRow height to 290px and our #bigBox height and width to 290px. It’s a good idea to keep rows, columns, boxes, and colors all separated in our CSS file. After creating the #topRow and #bigBox we can add a new &lt;div&gt; tags in our html. In our bigBox div we also need to set assign the red class we made earlier.</p>
+    </div>
+    <div class="container-fluid row">
+        <div class="col vcenter"><img class="img-responsive" alt="" src="../Images/WebDev/id_ClassesCSS.png" style="margin-top: 0px; max-height: 450px"></div>
+        <div class="col vcenter"><img class="img-responsive" alt="" src="../Images/WebDev/topRow_bigBoxHTML.png" style="margin-top: 0px; max-height: inherit"></div>
+    </div>
+    <div class="container-fluid row" align="center">
+        <h4 style="margin: auto; margin-top: 3%">When you open the new webpage, you should see this!</h4>
+    </div>
+    <div class="container-fluid row" align="center">
+         <img class="img-responsive" alt="" src="../Images/WebDev/webpage with bigBox.png" style="margin-top: 0px; max-height: 400px">
+    </div>
+    <div class="container-fluid row">
+        <div class="col vcenter"><p align="center">It’s starting to look more like our painting but our big box is on the wrong side of the canvas. To fix this we are going to add a class in our CSS file to position the box on right side and modify the bigBox div to include the class.</p></div>
+        <div class="col">
+            <div class="row">
+                <img alt="" class="img-responsive" src="../Images/WebDev/rightClassCSS.png" style="margin-top: 0px; max-height: inherit">
+            </div>
+            <div class="row">
+                <img alt="" class="img-responsive" src="../Images/WebDev/bigBox right red.png" style="margin-top: 1%; max-height: inherit">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row">
+        <h4 style="margin: auto; margin-top: 3%">And Ta-Da! Reload the webpage in the browser to see how the new class has modified the red box.</h4>
+    </div>
+    <div class="container-fluid row">
+        <img alt="" class="img-responsive" src="../Images/WebDev/webpage with bigBox float right.png" style="margin-top: 1%; max-height: 400px">
+    </div>
+    <div class="container-fluid row">
+        <div class="col vcenter"><p align="center">Now that we know how our classes and id selectors are work we need need to create two dividers, a column and a medium sized box. Using the sizes from our image to the right we can easily set our selectors and classes. When adding the #mediumBox and #divider2 make sure they are in the #topLeftColumn. </p></div>
+        <div class="col vcenter"><img alt="" class="img-responsive" src="../Images/WebDev/mondrianPX towRow.png" style="margin-top: 0px; max-height: 350px"></div>
+    </div>
+    <div class="fluid-container row">
+        <div class="col vcenter"><img alt="" class="img-responsive" src="../Images/WebDev/FinishingTopRowCSS.png" style="margin-top: 0px; max-height: 400px"></div>
+        <div class="col" align="center"><img alt="" class="img-responsive" src="../Images/WebDev/FinishingTopRowHTML.png" style="margin-top: 3%; max-height: 250px">
+        <p style="margin: 3%">Open up your webpage and check out the top row after you’ve added the the code, it should look something like this!
+</p></div>
+    </div>
+    <div class="container-fluid row">
+        <img alt="" class="img-responsive" src="../Images/WebDev/webpage topRow.png" style="margin-top: 3%; max-height: 400px">
+    </div>
+    <div class="container-fluid row">
+        <p align="center">Next we are going to add the middle row and the bottom row. The middle row is just going to be the black bar separating the top and bottom, use the image below as reference for the boxes you’re creating. Just like we did with the top row make sure the #tinyboxes and #divider3 are both nested in the #bottomRightColumn when writing the code.</p>
+        <img alt="" class="img-responsive" src="../Images/WebDev/mondrianPX Middle and Bottom Row.png" style="margin-top: 0px; max-height: 250px">
+    </div>
+    <div class="container-fluid row" style="margin-top: 3%">
+        <h4 style="margin: auto">Add the following code to your CSS file to finish it up!</h4>
+    </div>
+    <div class="container-fluid row" style="margin-top: 1%">
+        <div class="col vcenter"><img alt="" class="img-responsive" src="../Images/WebDev/R_C Finished CSS.png" style="margin-top: 0px; max-height: 450px"></div>
+        <div class="col vcenter"><img alt="" class="img-responsive" src="../Images/WebDev/Boxes Finished CSS.png" style="margin-top: 0px; max-height: 350px"></div>
+        <div class="col vcenter"><img alt="" class="img-responsive" src="../Images/WebDev/Dividers Finished CSS.png" style="margin-top: 0px; max-height: 300px"></div>
+    </div>
+    <div class="container-fluid row">
+        <p align="center" style="margin-top: 3%">Finally we are going to add the last two rows and boxes we created to our HTML file. Be sure to use proper indenting to make it easier to see where a &lt;div&gt; tag is beginning and ending.</p>
+        <img alt="" class="img-responsive" src="../Images/WebDev/Middle and Bottom Rows HTML.png" style="margin-top: 0px; max-height: 300px">
+        <p align="center" style="margin-top: 3%">Once you have this make sure you have saved both files and open up your webpage, don’t be discouraged if it doesn’t work the first time, anytime you write code you end up with a bug or two!  When you’re all done show your instructor.</p>
+        <img alt="" class="img-responsive" src="../Images/WebDev/webpage Finished.png" style="margin-top: 0px; max-height: 500px">
+    </div>
+    
+</div>    
+
     <hr>
     <hr>
 <div class="container-fluid container">
@@ -83,7 +200,7 @@
       <div class="modal-content">
         <div class="modal-header row">
           <div class="col-1">          
-              <button type="button" class="close" data-dismiss="modal" style="margin-top: 10px">&times;</button>
+              <button type="button" class="close" data-dismiss="modal" style="margin-top: 35px">&times;</button>
           </div>
           <div class="col-11">
               <h4 class="modal-title">Boss Fight Ahead!</h4>
