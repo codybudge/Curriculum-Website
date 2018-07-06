@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<script src="../js/geeko.js"></script>
 <link rel="icon" href="../Images/geeko-app-32x32.jpg">        
 <title>Unity 2D 2</title>
 
@@ -36,7 +36,7 @@
 <!--Body Content-->
 <div>
 <div class="container-fluid container">
-    <h1>UNITY 2D 1 - Intro to 2D Unity</h1>
+    <h1>UNITY 2D 2 - Coding with Unity</h1>
     <h2>Step 1</h2>
     <h3>PROJECT OVERVIEW AND SETUP</h3>
     <div class="row" align="center">
@@ -125,40 +125,10 @@
                 <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/rVSLczG1M1E?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="PlayerController()">PlayerController.cs</button>
-                <div id="PlayerController" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                        using UnityEngine;<br/>
-                        using System.Collections;<br/>
-                        <br/>
-                        [System.Serializable]<br/>
-                        <br/>
-                        public class Boundary<br/>
-                        {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp; public float xMin, xMax, zMin, zMax;<br/>
-                        }<br/>
-                        <br/>
-                        public class PlayerController : MonoBehaviour<br/>
-                        {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public float speed;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public float tilt;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public Boundary boundary;<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;void FixedUpdate ()<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float moveHorizontal = Input.GetAxis ("Horizontal");<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float moveVertical = Input.GetAxis ("Vertical");<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.velocity = movement * speed;<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.position = new Vector3(Mathf.Clamp (rigidbody.position.x,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boundary.xMin, boundary.xMax), 0.0f, Mathf.Clamp (rigidbody.position.z,<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boundary.zMin, boundary.zMax));<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.rotation = Quaternion.Euler (0.0f, 0.0f, rigidbody.velocity.x * -tilt);<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                        }<br/>
-                    </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('PlayerController')">PlayerController.cs</button>
+                <object id="PlayerController" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/PlayerController.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
@@ -168,22 +138,10 @@
 		        <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/OYeF62uhplQ?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="Mover()">Mover.cs</button>
-                <div id="Mover" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class Mover : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float speed;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.velocity = transform.forward * speed;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                    </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('Mover')">Mover.cs</button>
+                <object id="Mover" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/Mover.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
@@ -191,55 +149,10 @@
                 <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/BrlJsdP-VGo?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="PlayerController2()">PlayerController.cs</button>
-                <div id="PlayerController2" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                        using UnityEngine;<br/>
-                        using System.Collections;<br/>
-                        <br/>
-                        [System.Serializable]<br/>
-                        <br/>
-                        public class Boundary<br/>
-                        {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp; public float xMin, xMax, zMin, zMax;<br/>
-                        }<br/>
-                        <br/>
-                        public class PlayerController : MonoBehaviour<br/>
-                        {<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public float speed;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public float tilt;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public Boundary boundary;<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public GameObject shot;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public Transform shotSpawn;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;public float fireRate;<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;private float nextFire;<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;void Update ()<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Input.GetButton("Fire1") &amp;&amp; Time.time &gt; nextFire)<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextFire = Time.time + fireRate;<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(shot, shotSpawn.position, shotSpawn.rotation);<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;void FixedUpdate ()<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float moveHorizontal = Input.GetAxis ("Horizontal");<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float moveVertical = Input.GetAxis ("Vertical");<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.velocity = movement * speed;<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.position = new Vector3(Mathf.Clamp (rigidbody.position.x,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boundary.xMin, boundary.xMax), 0.0f, Mathf.Clamp (rigidbody.position.z,<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boundary.zMin, boundary.zMax));<br/>
-                        <br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.rotation = Quaternion.Euler (0.0f, 0.0f, rigidbody.velocity.x * -tilt);<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                        }<br/>
-                    </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('PlayerController2')">PlayerController.cs</button>
+                <object id="PlayerController2" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/PlayerController2.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
@@ -249,20 +162,10 @@
 		        <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/GIatyq9KT28?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="DestroyByBoundary()">DestroyByBoundary.cs</button>
-                <div id="DestroyByBoundary" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class DestroyByBoundary : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void OnTriggerExit(Collider other)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(other.gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                    </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('DestroyByBoundary')">DestroyByBoundary.cs</button>
+                <object id="DestroyByBoundary" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/DestroyByBoundary.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
@@ -270,40 +173,13 @@
                 <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/OtPSvgr_ywY?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="RandomRotator()">RandomRotator.cs</button>
-                <div id="RandomRotator" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class RandomRotator : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float tumble;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.angularVelocity = Random.insideUnitSphere * tumble; <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                    </div>
-                <button class="btn-lg btn-primary" onclick="DestroyByContact()">DestroyByContact.cs</button>
-                <div id="DestroyByContact" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class DestroyByContact : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void OnTriggerEnter(Collider other)<br/> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Boundary")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(other.gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                    </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('RandomRotator')">RandomRotator.cs</button>
+                <object id="RandomRotator" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/RandomRotator.txt" style="display: none; background-color: white">
+                </object>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('DestroyByContact')">DestroyByContact.cs</button>
+                <object id="DestroyByContact" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/DestroyByContact.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
 	</div>
     
@@ -314,34 +190,10 @@
 		        <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/2KRLVRPdoKQ?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="DestroyByContact2()">DestroyByContact.cs</button>
-                <div id="DestroyByContact2" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class DestroyByContact : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject explosion;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject playerExplosion;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void OnTriggerEnter(Collider other)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Boundary")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(explosion, transform.position, transform.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Player")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(playerExplosion, other.transform.position, other.transform.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameController.GameOver ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(other.gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                    </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('DestroyByContact2')">DestroyByContact.cs</button>
+                <object id="DestroyByContact2" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/DestroyByContact2.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
@@ -349,30 +201,10 @@
                 <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/ZNTph6E2Fvg?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="GameController()">GameController.cs</button>
-                <div id="GameController" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class GameController : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject hazard;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public Vector3 spawnValues;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SpawnWaves ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void SpawnWaves ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quaternion spawnRotation = Quaternion.identity;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate (hazard, spawnPosition, spawnRotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('GameController')">GameController.cs</button>
+                <object id="GameController" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/GameController.txt" style="display: none; background-color: white">/
+                </object>
+</div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
@@ -382,59 +214,13 @@
 		        <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/r8N6J79W0go?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="GameController2()">GameController.cs</button>
-                <div id="GameController2" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class GameController : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject hazard;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public Vector3 spawnValues;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public int hazardCount;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float spawnWait;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float startWait;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float waveWait;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StartCoroutine (SpawnWaves ());<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;IEnumerator SpawnWaves ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (startWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while (true)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; hazardCount; i++)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;spawnValues.x), spawnValues.y, spawnValues.z);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quaternion spawnRotation = Quaternion.identity;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate (hazard, spawnPosition, spawnRotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (spawnWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (waveWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-                <button class="btn-lg btn-primary" onclick="DestroyByTime()">DestroyByTime.cs</button>
-                <div id="DestroyByTime" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>                    
-                    public class DestroyByTime : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float lifetime;<br/>
-                    <br/>                    
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy (gameObject, lifetime);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('GameController2')">GameController.cs</button>
+                <object id="GameController2" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/GameController2.txt" style="display: none; background-color: white">
+                </object>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('DestroyByTime')">DestroyByTime.cs</button>
+                <object id="DestroyByTime" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/DestroyByTime.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
@@ -442,56 +228,10 @@
                 <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/kBkL7CKdEq0?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="PlayerController3()">PlayerController.cs</button>
-                <div id="PlayerController3" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    [System.Serializable]<br/>
-                    public class Boundary<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float xMin, xMax, zMin, zMax;<br/>
-                    }<br/>
-                    <br/>
-                    public class PlayerController : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float speed;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float tilt;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public Boundary boundary;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject shot;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public Transform shotSpawn;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float fireRate;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;private float nextFire;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Update ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Input.GetButton("Fire1") &amp;&amp; Time.time &gt; nextFire)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nextFire = Time.time + fireRate;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(shot, shotSpawn.position, shotSpawn.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audio.Play ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void FixedUpdate ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float moveHorizontal = Input.GetAxis ("Horizontal");<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float moveVertical = Input.GetAxis ("Vertical");<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.velocity = movement * speed;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.position = new Vector3(Mathf.Clamp (rigidbody.position.x,<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boundary.xMin, boundary.xMax), 0.0f, Mathf.Clamp (rigidbody.position.z,<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;boundary.zMin, boundary.zMax));<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rigidbody.rotation = Quaternion.Euler (0.0f, 0.0f, rigidbody.velocity.x * -tilt);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('PlayerController3')">PlayerController.cs</button>
+                <object id="PlayerController3" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/PlayerController3.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
@@ -501,101 +241,13 @@
 		        <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/F6HLFk6JxtU?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="DestroyByContact3()">DestroyByContact.cs</button>
-                <div id="DestroyByContact3" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class DestroyByContact : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject explosion;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject playerExplosion;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public int scoreValue;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;private GameController gameController;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GameObject gameControllerObject = GameObject.FindWithTag ("GameController");<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (gameControllerObject != null)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameController = gameControllerObject.GetComponent ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (gameController == null)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debug.Log ("Cannot find 'GameController' script");<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>      
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void OnTriggerEnter(Collider other)<br/> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Boundary")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(explosion, transform.position, transform.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Player")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(playerExplosion, other.transform.position, other.transform.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameController.AddScore (scoreValue);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(other.gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-                <button class="btn-lg btn-primary" onclick="GameController3()">GameController.cs</button>
-                <div id="GameController3" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class GameController : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject hazard;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public Vector3 spawnValues;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public int hazardCount;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float spawnWait;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float startWait;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float waveWait;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GUIText scoreText;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;private int score;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score = 0;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdateScore ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StartCoroutine (SpawnWaves ());<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;IEnumerator SpawnWaves ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (startWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while (true)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; hazardCount; i++)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quaternion spawnRotation = Quaternion.identity;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate (hazard, spawnPosition, spawnRotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (spawnWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (waveWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public void AddScore (int newScoreValue)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += newScoreValue;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdateScore ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void UpdateScore ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scoreText.text = "Score: " + score;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('DestroyByContact3')">DestroyByContact.cs</button>
+                <object id="DestroyByContact3" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/DestroyByContact3.txt" style="display: none; background-color: white">
+                </object>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('GameController3')">GameController.cs</button>
+                <object id="GameController3" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/GameController3.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
@@ -603,135 +255,13 @@
                 <a href="#">
        		        <iframe class="small" src="https://www.youtube.com/embed/QxWWz5IAvoI?rel=0" allowfullscreen></iframe>
         	    </a>
-                <button class="btn-lg btn-primary" onclick="DestroyByContact4()">DestroyByContact.cs</button>
-                <div id="DestroyByContact4" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class DestroyByContact : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject explosion;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject playerExplosion;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public int scoreValue;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;private GameController gameController;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GameObject gameControllerObject = GameObject.FindWithTag ("GameController");<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (gameControllerObject != null)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameController = gameControllerObject.GetComponent ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (gameController == null)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debug.Log ("Cannot find 'GameController' script");<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;void OnTriggerEnter(Collider other) <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Boundary")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(explosion, transform.position, transform.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (other.tag == "Player")<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate(playerExplosion, other.transform.position, other.transform.rotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameController.GameOver ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameController.AddScore (scoreValue);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(other.gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destroy(gameObject);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('DestroyByContact4')">DestroyByContact4.cs</button>
+                <object id="DestroyByContact4" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/DestroyByContact4.txt" style="display: none; background-color: white">
+                </object>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('GameController4')">GameController.cs</button>
+                <object id="GameController4" type="text/plain" width="450px" height="150px" data="Scripts/Unity2D2/GameController4.txt" style="display: none; background-color: white">
+                </object>
                 </div>
-                <button class="btn-lg btn-primary" onclick="GameController4()">GameController.cs</button>
-                <div id="GameController4" style="width: 400px; height: 150px; overflow: auto; display: none" align="left">
-                    using UnityEngine;<br/>
-                    using System.Collections;<br/>
-                    <br/>
-                    public class GameController : MonoBehaviour<br/>
-                    {<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GameObject hazard;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public Vector3 spawnValues;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public int hazardCount;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float spawnWait;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float startWait;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public float waveWait;<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GUIText scoreText;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GUIText restartText;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;public GUIText gameOverText;<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;private bool gameOver;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;private bool restart;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;private int score;<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Start ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameOver = false;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;restart = false;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;restartText.text = "";<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameOverText.text = "";<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score = 0;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdateScore ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;StartCoroutine (SpawnWaves ());<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;void Update ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (restart)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Input.GetKeyDown (KeyCode.R))<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application.LoadLevel (Application.loadedLevel);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;IEnumerator SpawnWaves ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (startWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while (true)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i &lt; hazardCount; i++)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quaternion spawnRotation = Quaternion.identity;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Instantiate (hazard, spawnPosition, spawnRotation);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (spawnWait);<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds (waveWait);<br/>
-                    <br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (gameOver)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;restartText.text = "Press 'R' for Restart";<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;restart = true;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;public void AddScore (int newScoreValue)<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;score += newScoreValue;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpdateScore ();<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;void UpdateScore ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;scoreText.text = "Score: " + score;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/><br/>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;public void GameOver ()<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;{<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameOverText.text = "Game Over!";<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gameOver = true;<br/>
-                    &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-                    }<br/>
-                </div>
-            </div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
@@ -762,191 +292,37 @@
 </div>   
 </div>
     
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
+<!-- Modal and Scripts -->
+<script src="../js/geeko.js"></script>    
+<a href="Unity2D2BF.html" id="destination"></a> 
+    
+<div class="modal"  id="myModal" role="dialog">
 <form onsubmit="password(event)">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
-        <div class="modal-header row">
-          <div class="col-1">          
-              <button type="button" class="close" data-dismiss="modal" style="margin-top: 10px">&times;</button>
-          </div>
-          <div class="col-11">
-              <h4 class="modal-title">Boss Fight Ahead!</h4>
-          </div>
+        <div class="modal-header row" style="margin-top: -3%; margin-bottom: -3%">
+              <h2 class="modal-title" align="center">Boss Fight Ahead!</h2>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="margin-top: -3%; margin-bottom: -3%">
             <!-- Password Form here -->
-          <p>Enter the magic word(s)...</p>
-          
-            <div class="form-group">
-              <label for="usr">Name:</label>
+          <p>Unlocked by instructor</p>
+            <div class="form-group" style="margin-top: -3%; margin-bottom: -3%">
+              <label for="usr" style="margin-top: -3%; margin-bottom: -3%">Instructor:</label>
               <input type="text" class="form-control" id="usr">
             </div>
             <div class="form-group">
-              <label for="pwd">Password:</label>
+              <label for="pwd" style="margin-top: 3%; margin-bottom: -3%">Password (no peeking):</label>
               <input type="password" class="form-control" id="pwd">
             </div>
-         
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Not quite yet...</button>
-          <button type="submit" class="btn btn-default">It's Go-Time!</button>
+        <div class="modal-footer" style="margin-top: -3%; margin-bottom: 0%">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-primary">It's Go-Time!</button>
         </div>
       </div>
     </div>
  </form>  
-  </div>
-   
-<!-- Password Script -->
-<script>
-function password(e) {
-	e.preventDefault()
-	var usr = document.getElementById('usr').value
-	var pwd = document.getElementById('pwd').value
-	
-if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
-	window.location = "Unity2D2BF.html"
-    }else{
-        alert('wrong password or username')
-    }
-} 
-    
-function PlayerController() {
-    var x = document.getElementById("PlayerController");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function PlayerController2() {
-    var x = document.getElementById("PlayerController2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function PlayerController3() {
-    var x = document.getElementById("PlayerController3");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function Mover() {
-    var x = document.getElementById("Mover");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function DestroyByBoundary() {
-    var x = document.getElementById("DestroyByBoundary");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function DestroyByContact() {
-    var x = document.getElementById("DestroyByContact");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-
-function DestroyByContact2() {
-    var x = document.getElementById("DestroyByContact2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function DestroyByContact3() {
-    var x = document.getElementById("DestroyByContact3");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function DestroyByContact4() {
-    var x = document.getElementById("DestroyByContact4");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function DestroyByTime() {
-    var x = document.getElementById("DestroyByTime");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function RandomRotator() {
-    var x = document.getElementById("RandomRotator");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function GameController() {
-    var x = document.getElementById("GameController");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function GameController2() {
-    var x = document.getElementById("GameController2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function GameController3() {
-    var x = document.getElementById("GameController3");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-    
-function GameController4() {
-    var x = document.getElementById("GameController4");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-</script>
-    
+</div>
+       
 </body>
 </html>

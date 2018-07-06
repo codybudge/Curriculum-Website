@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <link rel="icon" href="../Images/geeko-app-32x32.jpg">        
-<title>Unity 2D 1</title>
+<title>Unity 3D 1</title>
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -36,18 +36,19 @@
 <!--Body Content-->
 <div>
 <div class="container-fluid container">
-    <h1>UNITY 2D 1 - Intro to 2D Unity</h1>
+    <h1>UNITY 3D 1 - Intro to 3D Unity</h1>
     <h2>Step 1</h2>
-    <h3>OPEN A 2D UNITY PROJECT</h3>
+    <h3>OPEN A 3D UNITY PROJECT</h3>
     <div class="row" align="center">
         <div class="col vcenter">
-        <p style="margin: auto">Open a new Unity 2D project to get started. To do this, double-click the Unity icon on the desktop, and then click "New". When naming projects, always make sure it's in your folder, and has a name that describes the project.</p>
+        <p style="margin: auto">Open a new Unity 3D project to get started. To do this, double-click the Unity icon on the desktop, and then click "New". When naming projects, always make sure it's in your folder, and has a name that describes the project.</p>
         </div>
         <div class="col">       
-        <img class="img-responsive" alt="" src="../Images/Unity2D/Open 2D Unity.gif" style="max-height: 300px">
+        <img class="img-responsive" alt="" src="../Images/Unity3D/Open Unity 3D Project.gif" style="max-height: 300px; margin: 0px">
         </div>
     </div>
-     <button class="btn-block btn-lg btn-danger" onClick="collapsingCode('infoVid')" style="margin-top: 3%"><strong>Click here if you haven't completed Unity 3D 1!</strong></button>
+    
+    <button class="btn-block btn-lg btn-danger" onClick="collapsingCode('infoVid')" style="margin-top: 3%"><strong>Click here if you haven't completed Unity 2D 1!</strong></button>
     
 <div id="infoVid" class="row" style="margin-bottom: 25px; margin-top: 25px; display: none">
     <div class="col vcenter" align="center" style="width: ">
@@ -73,21 +74,22 @@
             </div>
         </div>
 	</div>
+    
 	</div>
 	<hr>
 <div class="container-fluid container">	
 		<h2>Step 2</h2>
 		<h3>FOLLOW ALONG IN YOUR OWN PROJECT</h3>
 	<div class="container-fluid row">
-		<div class="row col-12">
-			<p>Watch the video below to get an overview of what you will be making in this quest. At the end of the video you will be walked through how to add the assets you need to work on this project. Follow along with the videos in your own project. Quick tip: if you press CTRL+TAB on the keyboard, you can quickly change between your project and the videos here.</p>
+		<div class="row">
+			<p align="center">Watch the video below to get an overview of what you will be making in this quest. At the end of the video you will be walked through how to add the assets you need to work on this project. Follow along with the videos in your own project. Quick tip: if you press CTRL+TAB on the keyboard, you can quickly change between your project and the videos here.</p>
 		</div>
         <div class="row col-12">
             <h4 style="margin: auto">1. 2D UFO Project Introduction</h4>
         </div>            
 		<div class="row col-12">
 			<a href="#" style="margin: auto">
-        		<iframe src="https://www.youtube.com/embed/jTtCsOjNwJQ?rel=0" allowfullscreen width="800px" height="450px"></iframe>
+        		<iframe src="https://www.youtube.com/embed/W_fAidYRGzs?rel=0" allowfullscreen width="800px" height="450px"></iframe>
         	</a>
       	</div>
 		<div class="row col-12" style="margin-top: 12px">
@@ -102,63 +104,78 @@
 	<div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
 		<div class="col" align="center">
             <div class="container-fluid well">
-		        <h4>2. Setting Up the Play Field</h4>
+		        <h4>2. Moving the Player</h4>
 		        <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/R5QVea_TKdI?rel=0" allowfullscreen></iframe>
+       		        <iframe class="small" src="https://www.youtube.com/embed/7C7WWxUxPZE?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('PlayerController')">PlayerController.cs</button>
+                <object id="PlayerController" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D1/PlayerController.txt" style="display: none; background-color: white">
+                </object>
+</div>
+        </div>
+        <div class="col" align="center">
+            <div class="container-fluid well">
+                <h4>3. Moving the Camera</h4>
+                <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/Xcm5H2J95iI?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('CameraController')">CameraController.cs</button>
+                <object id="CameraController" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D1/CameraController.txt" style="display: none; background-color: white">
+                </object>
+</div>
+        </div>
+	</div>
+    <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
+		<div class="col" align="center">
+            <div class="container-fluid well">
+		        <h4>4. Setting Up the Play Area</h4>
+		        <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/dahT0wRVO1Q?rel=0" allowfullscreen></iframe>
         	    </a>
             </div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
-                <h4>3. Controlling the Player</h4>
+                <h4>5. Creating Collectable Objects</h4>
                 <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/l5bkhsyTTcw?rel=0" allowfullscreen></iframe>
+       		        <iframe class="small" src="https://www.youtube.com/embed/HlDGSStxuHI?rel=0" allowfullscreen></iframe>
         	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('Rotator')">Rotator.cs</button>
+                <object id="Rotator" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D1/Rotator.txt" style="display: none; background-color: white">
+                </object>
             </div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
 		<div class="col" align="center">
             <div class="container-fluid well">
-		        <h4>4. Adding Collision</h4>
+		        <h4>6. Collecting the Pick Up Objects</h4>
 		        <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/vfspzIbev0E?rel=0" allowfullscreen></iframe>
+       		        <iframe class="small" src="https://www.youtube.com/embed/XtR29MmzuT0?rel=0" allowfullscreen></iframe>
         	    </a>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('PlayerController2')">PlayerController.cs</button>
+                <object id="PlayerController2" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D1/PlayerController2.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
         <div class="col" align="center">
             <div class="container-fluid well">
-                <h4>5. Following the Player with the Camera</h4>
+                <h4>7. Displaying the Score and Text</h4>
                 <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/5oo_4sXjoKk?rel=0" allowfullscreen></iframe>
+       		        <iframe class="small" src="https://www.youtube.com/embed/bFSLI2cmYYo?rel=0" allowfullscreen></iframe>
         	    </a>
-            </div>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('PlayerController3')">PlayerController.cs</button>
+                <object id="PlayerController3" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D1/PlayerController3.txt" style="display: none; background-color: white">
+                </object>
+</div>
         </div>
 	</div>
     <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
 		<div class="col" align="center">
             <div class="container-fluid well">
-		        <h4>6. Creating Collectable</h4>
+		        <h4>8. Building the Game</h4>
 		        <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/BpgG7nBQxFc?rel=0" allowfullscreen></iframe>
-        	    </a>
-            </div>
-        </div>
-        <div class="col" align="center">
-            <div class="container-fluid well">
-                <h4>7. Picking Up Collectables</h4>
-                <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/XRYoEMqK_Fo?rel=0" allowfullscreen></iframe>
-        	    </a>
-            </div>
-        </div>
-	</div>
-    <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
-		<div class="col" align="center">
-            <div class="container-fluid well">
-		        <h4>8. Counting Collectables and Keeping Score</h4>
-		        <a href="#">
-       		        <iframe class="small" src="https://www.youtube.com/embed/38i4JQguH9s?rel=0" allowfullscreen></iframe>
+       		        <iframe class="small" src="https://www.youtube.com/embed/hSg3e1M3hKY?rel=0" allowfullscreen></iframe>
         	    </a>
             </div>
         </div>
@@ -190,7 +207,7 @@
     
 <!-- Modal and Scripts -->
 <script src="../js/geeko.js"></script>    
-<a href="Unity2D1BF.html" id="destination"></a> 
+<a href="Unity3D1BF.html" id="destination"></a> 
     
 <div class="modal"  id="myModal" role="dialog">
 <form onsubmit="password(event)">

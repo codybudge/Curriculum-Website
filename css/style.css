@@ -116,7 +116,6 @@ button.boss-fight{
 
 
 .modal{
-    margin-top: 100px;
 }
 
 .container-fluid {
@@ -132,6 +131,7 @@ button.boss-fight{
 
 .well {
     margin: 15px;
+    width: auto;
 }
 .vcenter {
     display: flex;

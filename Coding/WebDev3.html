@@ -24,6 +24,9 @@
 </head>
 
 <body>
+
+
+    
 <!-- Banner -->
 <div class="site-brand-inner has-logo-img no-desc" style="background-color: white"> 
   <!-- Navbar -->
@@ -101,57 +104,37 @@
 </div>   
 </div>
     
-<!-- Modal -->
-<div class="modal fade" id="myModal" role="dialog">
+<!-- Modal and Scripts -->
+<script src="../js/geeko.js"></script>    
+<a href="#" id="destination"></a> 
+    
+<div id="myModal" role="dialog">
 <form onsubmit="password(event)">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
-        <div class="modal-header row">
-          <div class="col-1">          
-              <button type="button" class="close" data-dismiss="modal" style="margin-top: 10px">&times;</button>
-          </div>
-          <div class="col-11">
-              <h4 class="modal-title">Boss Fight Ahead!</h4>
-          </div>
+        <div class="modal-header row" style="margin-top: -3%; margin-bottom: -3%">
+              <h2 class="modal-title" align="center">Boss Fight Ahead!</h2>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="margin-top: -3%; margin-bottom: -3%">
             <!-- Password Form here -->
-          <p>Enter the magic word(s)...</p>
-          
-            <div class="form-group">
-              <label for="usr">Name:</label>
+          <p>Unlocked by instructor</p>
+            <div class="form-group" style="margin-top: -3%; margin-bottom: -3%">
+              <label for="usr" style="margin-top: -3%; margin-bottom: -3%">Instructor:</label>
               <input type="text" class="form-control" id="usr">
             </div>
             <div class="form-group">
-              <label for="pwd">Password:</label>
+              <label for="pwd" style="margin-top: 3%; margin-bottom: -3%">Password (no peeking):</label>
               <input type="password" class="form-control" id="pwd">
             </div>
-         
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Not quite yet...</button>
-          <button type="submit" class="btn btn-default">It's Go-Time!</button>
+        <div class="modal-footer" style="margin-top: -3%; margin-bottom: 0%">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-primary">It's Go-Time!</button>
         </div>
       </div>
     </div>
  </form>  
-  </div>
-   
-<!-- Password Script UNUSED FOR NOW, Add "onClick="passWord()"" to the Go-Time Button to use.-->
-<script>
-function password(e) {
-	e.preventDefault()
-	var usr = document.getElementById('usr').value
-	var pwd = document.getElementById('pwd').value
-	
-if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
-	window.location = "WebDev3BF.html"
-}else{
-	alert('wrong password or username')
-}
-} 
-</script>
-    
+</div>
     
 </body>
 </html>
