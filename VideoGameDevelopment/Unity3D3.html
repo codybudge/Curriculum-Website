@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<meta charset="utf-8">
+    
+    <!--MODAL IMPORTS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="../js/geeko.js"></script>
+<link rel="icon" href="../Images/geeko-app-32x32.jpg">        
+<title>Unity 3D 3</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Geeko Styleguide -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/roboto:n2,n9,n4,n5,n7:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Banner -->
+<div class="site-brand-inner has-logo-img no-desc" style="background-color: white"> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light"> <a href="../Home.html" class="custom-logo-link" rel="home" itemprop="url"> <img width="250" height="43" src="../Images/logo_geeko-line.png" class="custom-logo" alt="Geeko Labs" itemprop="logo"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <a href="https://app.geekolabs.com/auth/login" target="_blank"><button class="btn-lg btn-primary" type="button" style="margin-left: 100%; margin-top: 25px">Journal</button></a>
+  </nav>
+</div>    
+    
+<!--Body Content-->
+<div>
+<div class="container-fluid container">
+    <h1>UNITY 3D 3 - Coding with Unity</h1>
+    <h2>Step 1</h2>
+    <h3>PROJECT OVERVIEW AND SETUP</h3>
+    <div class="row" align="center">
+        <p>By now, you have created at least two projects. Time to do it again! Create a new project in Unity 3D and while it's loading, watch this video explaining the overall goal of this quest. Be ready for a real challenge!</p>
+    </div>
+    <div class="row">
+        <div class="col-lg-6"><img class="img-responsive" alt="" src="../Images/Unity3D/Tanks.JPG" style="max-height: 300px; margin: 0px"></div>
+        <div class="col vcenter"><p align="center">When your project loads, navigate to the Asset Store and import the Tanks! Tutorial Asset Package. This contains what you need to complete the quest.</p></div>
+    </div>
+        <div class="row">
+            <h4 style="margin: auto; margin-top: 3%">1. 2D Roguelike Introduction</h4>
+        </div>            
+		<div class="row">
+			<a href="#" style="margin: auto">
+        		<iframe src="https://www.youtube.com/embed/paLLfWd2k5A?rel=0" allowfullscreen width="800px" height="450px"></iframe>
+        	</a>
+      	</div>
+		<div class="row" style="margin-top: 12px">
+			<p style="margin: auto">Great job! Continue your project by following along with the videos below.</p>
+		</div>
+	</div>
+	<hr>
+<div class="container-fluid container">
+	<h2>STEP 2</h2>
+	<h3>FOLLOW AND BUILD</h3>
+    <h5>Scripts used in the project are listed below the videos. These series of videos introduce Scripts. Scripts are code that you write to change parts of the game. Click the Buttons to reveal the script beneath the videos. </h5>
+	<div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
+		<div class="col" align="center">
+            <div class="container-fluid well">
+		        <h4>2. Tank Creation and Control</h4>
+		        <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/noXtT_zN-84?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('TankMovement')">TankMovement.cs</button>
+                <object id="TankMovement" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/TankMovement.txt" style="display: none; background-color: white">
+                </object>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="container-fluid well">
+                <h4>3. Camera Control</h4>
+                <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/llEJtLuQyPM?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('CameraControl')">CameraControl.cs</button>
+                <object id="CameraControl" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/CameraControl.txt" style="display: none; background-color: white">
+                </object>
+            </div>
+        </div>
+	</div>
+    <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
+		<div class="col" align="center">
+            <div class="container-fluid well">
+		        <h4>4. Tank Health</h4>
+		        <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/XRzGfRkZrNM?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onclick="collapsingCode('TankHealth')">TankHealth.cs</button>
+                <object id="TankHealth" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/TankHealth.txt" style="display: none; background-color: white"></object>
+                <button class="btn-lg btn-primary" onclick="collapsingCode('UIDirectionControl')">UIDirectionControl.cs</button>
+                <object id="UIDirectionControl" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/UIDirectionControl.txt" style="display: none; background-color: white"></object>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="container-fluid well">
+                <h4>5. Shell Creation</h4>
+                <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/rkQmXcQRpTw?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('ShellExplosion')">ShellExplosion.cs</button>
+                <object id="ShellExplosion" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/ShellExplosion.txt" style="display: none; background-color: white">
+                </object>   
+            </div>
+        </div>
+	</div>
+    <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
+		<div class="col" align="center">
+            <div class="container-fluid well">
+		        <h4>6. Shooting Shells</h4>
+		        <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/_In3KT97aTw?rel=0" allowfullscreen></iframe>
+        	    </a>
+               <button class="btn-lg btn-primary" onClick="collapsingCode('TankShooting')">TankShooting.cs</button>
+                <object id="TankShooting" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/TankShooting.txt" style="display: none; background-color: white">
+                </object>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="container-fluid well">
+                <h4>7. Game Managers</h4>
+                <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/M4bH9lWOJE4?rel=0" allowfullscreen></iframe>
+        	    </a>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('TankManager')">TankManager.cs</button>
+                <object id="TankManager" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/TankManager.txt" style="display: none; background-color: white">
+                </object>
+                <button class="btn-lg btn-primary" onClick="collapsingCode('GameManager')">GameManager.cs</button>
+                <object id="GameManager" type="text/plain" width="450px" height="150px" data="Scripts/Unity3D3/GameManager.txt" style="display: none; background-color: white">
+                </object>
+            </div>
+        </div>
+	</div>
+    <div class="container-fluid row" style="margin-bottom: 25px; margin-top: 25px">
+		<div class="col" align="center">
+            <div class="container-fluid well">
+		        <h4>8. Audio Mixing</h4>
+		        <a href="#">
+       		        <iframe class="small" src="https://www.youtube.com/embed/h1vWeglOS_w?rel=0" allowfullscreen></iframe>
+        	    </a>
+            </div>
+        </div>
+	</div>
+    
+    <div class="container-fluid row">
+        <p align="center" style="margin: auto">Take your instructor on in a game of Tanks to show off you hard work!</p>
+    </div>
+</div>
+    <hr>
+    
+    <hr>
+<div class="container-fluid container">
+    <div class="container-fluid row">
+        <div class="col" align="center">
+            <h3>Are you ready?</h3>
+            <p>Talk to your instructor to show your work, and have them unlock the Boss Fight!</p>
+            <button class="boss-fight" data-toggle="modal" data-target="#myModal"><h3>Proceed?</h3></button>
+        </div>
+    </div>
+</div>   
+</div>
+    
+<!-- Modal and Scripts -->
+<script src="../js/geeko.js"></script>    
+<a href="Unity2D3BF.html" id="destination"></a> 
+    
+<div class="modal"  id="myModal" role="dialog">
+<form onsubmit="password(event)">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header row" style="margin-top: -3%; margin-bottom: -3%">
+              <h2 class="modal-title" align="center">Boss Fight Ahead!</h2>
+        </div>
+        <div class="modal-body" style="margin-top: -3%; margin-bottom: -3%">
+            <!-- Password Form here -->
+          <p>Unlocked by instructor</p>
+            <div class="form-group" style="margin-top: -3%; margin-bottom: -3%">
+              <label for="usr" style="margin-top: -3%; margin-bottom: -3%">Instructor:</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+              <label for="pwd" style="margin-top: 3%; margin-bottom: -3%">Password (no peeking):</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+        <div class="modal-footer" style="margin-top: -3%; margin-bottom: 0%">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-primary">It's Go-Time!</button>
+        </div>
+      </div>
+    </div>
+ </form>  
+</div>
+       
+</body>
+</html>

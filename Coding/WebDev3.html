@@ -63,8 +63,21 @@
         <p>Now let’s start the html file by setting up the head and body</p>
     </div>
     <div class="container-fluid row">
-        <div class="col vcenter"><img class="img-responsive" alt="" src="../Images/geeko-app-270x270.jpg" style="max-height: 350px; margin: 0px"></div>
-        <div class="col"><img class="img-responsive" alt="" src="../Images/WebDev/HtmlStep1.png" style="max-height: 350px; margin: 0px"></div>
+        <div class="col vcenter"><img class="img-responsive" alt="" src="../Images/WebDev/htmlSetup.gif" style="max-height: 350px; margin: 0px"></div>
+        <div class="col">
+            <img class="img-responsive" alt="" src="../Images/WebDev/htmlSetupDone.png" style="max-height: 270px; margin: 0px">
+            <p align="center" style="margin-left: 20%; margin-right: 20%">Comments are the section of code within the "<em style="color: blue">&lt;!--</em>" and "<em style="color: blue">--&gt;</em>" anything between these series of symbols is ignored by the browser window, so you can use them to leave yourself messages, or to label your code.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p align="center">Make sure to add comments as you code for debugging purposes later. To finish off our &lt;head&gt; section we are going to use the <em style="color: blue">&lt;link&gt;</em> tag to connect to, and use the code written in the css file. This is like a telepathic connection between this file, and the file named in the "href".</p>
+            <p> <em style="color: blue">href=””</em> &nbsp;tells our html file where to find our css file.</p>
+            <p> <em style="color: blue">rel=””</em> specifies the relationship between our html file and the css file.</p>
+            <p><em style="color: blue">../css/PopUpGeekoStyle.css</em> navigates you back one folder then takes you to your css folder and then to your css file. <em>BE SURE to include the "<em style="color: blue">..</em>" before the first slash.</em>
+            </p>
+        </div>
+        <div class="col vcenter"><img class="img-responsive" alt="" style="margin: 0; max-height: 150px" src="../Images/WebDev/HtmlHead.png"></div>
     </div>
 </div>
 	<hr>
@@ -72,24 +85,29 @@
 	<h2>STEP 3</h2>
 	<h3>STARTING OUR CSS FILE</h3>
     <div class="container-fluid row">
-        <div class="col vcenter">
-            <p align="center">First add type and Id selectors. Our type selectors are body {} and h1{} these will format our body and header elements. Our Id selectors are #title{} and #gameholder{} these will be directly called later in our html file. Don’t worry green squiggles will go away after we add code.</p>
+        <div class="col">
+            <p align="center" style="margin-top: 8% "><em>Type selectors</em> will apply to the <em>type</em> of object that they share a name with. Our type selectors are for all things within the &lt;body&gt; and &lt;h1&gt; elements.</p>
+            <p align="center">I.D. selectors can be applied to any element, not just certain types of elements. Css I.D. selectors have a "<em>#</em>" symbol in front of them.</p>
+            <p align="center">Now create the Type and ID selectors. Our I.D. selectors are #title{} and #gameholder{}. Ignore the green squigglies.</p>
         </div>
         <div class="col">
             <img class="img-responsive" alt="" src="../Images/WebDev/CssStep3.png" style="max-height: 250px; margin: 0px">
         </div>
     </div>
     <div class="container-fluid row" style="margin-top: 3%">
+        <h4 style="margin: auto">Add the code shown below to the CSS file.</h4>
+    </div>
+    <div class="container-fluid row" style="margin-top: 1%">
         <div class="col vcenter">
-            <p>When typing css make sure to include ; after lines of code, also use /* to open comment sections and */ to close it. Next we are going add the following to our body and h1 selector:</p>
+            <p align="center" style="margin-right: 20px">When typing CSS make sure to include a semicolon (";") after any line that isn't a bracket.</p><p>Use <em style="color: blue">/*</em> to begin a comment, and <em style="color: blue">*/</em> to close it. Its the same way that "<em style="color: blue">&lt;!--</em>" and "<em style="color: blue">--&gt;</em>" work for HTML.</p>
         </div>
         <div class="col vcenter">
             <img class="img-responsive" alt="" src="../Images/WebDev/CssBodyHeader.png" style="max-height: 300px; margin: 0px">
         </div>
         <div class="col vcenter">
-            <p>This gives our background and header two different colors of blue. “#B7DADD” and “#188CCA” are called a hex color, these are a 6 digit hexadecimal representing the RGB values.</p>
+            <p>“#B7DADD” and “#188CCA” are called hex colors, these are a 6 digit codes representing the color values.</p>
         </div>
-    </div>
+</div>
 </div>
     <hr>
     <hr>
@@ -106,9 +124,9 @@
     
 <!-- Modal and Scripts -->
 <script src="../js/geeko.js"></script>    
-<a href="#" id="destination"></a> 
+<a href="WebDev3BF.html" id="destination"></a> 
     
-<div id="myModal" role="dialog">
+<div class="modal"  id="myModal" role="dialog">
 <form onsubmit="password(event)">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
