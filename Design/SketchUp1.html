@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<meta charset="utf-8">
+    
+    <!--MODAL IMPORTS -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="icon" href="../Images/geeko-app-32x32.jpg">
+<title>SketchUp 1</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Geeko Styleguide -->
+<link href="../css/style.css" rel="stylesheet">
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/roboto:n2,n9,n4,n5,n7:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!-- Banner -->
+<div class="site-brand-inner has-logo-img no-desc" style="background-color: white"> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light"> <a href="../Home.html" class="custom-logo-link" rel="home" itemprop="url"> <img width="250" height="43" src="../Images/logo_geeko-line.png" class="custom-logo" alt="Geeko Labs" itemprop="logo"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <a href="https://app.geekolabs.com/auth/login" target="_blank"><button class="btn-lg btn-primary" type="button" style="margin-left: 100%; margin-top: 25px">Journal</button></a>
+  </nav>
+</div>    
+    
+<!--Body Content-->
+<div>
+<div class="container-fluid container">
+    <h1>SketchUp 1 - Intro to 3D Modelling</h1>
+    <p align="center">3D modelling is using software to create 3-dimensional images. It can range in uses from creating digital blueprints that are used to autonomously create products, to animating and rendering complete movies. Many different types of 3D modelling exist - the most basic of which is Mesh Modelling. Think of a cube - it has 6 sides. Each of those sides is called a “Face”. With mesh modelling, you can modify those faces, and even add new ones to create an entirely different shape!</p>
+    <h2>Step 1</h2>
+    <h3>Opening and Using the Software</h3>
+    <!-- INTRODUCTION (PRE-VIDEO SETUP) -->
+    <div class="container-fluid row">
+        <div class="col" align="center" style="margin-top: 6em">
+            <h4>Open SketchUp.</h4><br>
+            <p>First, double-click the SketchUp icon to open the program.</p><br>
+            <p>Then click "Choose Template" and choose "Woodworking - Millimeters".</p><br>
+            <p>Last, click "Start Using SketchUp".</p><br>
+        </div>
+        <div class="col" align="center"> 
+            <img class="img-responsive" alt="" src="../Images/SketchUp/Upen SketchUp.gif" style="max-height: 450px; margin: 0px">
+        </div> 
+    </div>
+    <div class="row" style="margin-top: 3%">
+        <div class="col-lg-6">
+            <img class="img-responsive" alt="" src="../Images/SketchUp/Draw Rectangle.gif" style="max-height: 450px; margin: 0px">
+        </div>
+        <div class="col-lg-6" align="center">
+            <h4 style="margin-top: 5em">Let's draw a rectangle.</h4><br>
+            <p>Select the Rectangle tool.</p>
+            <p>Click on the Origin (the center of the colored lines).</p>
+            <p>Move the mouse to resize the rectangle.</p>
+            <p>Click again to create a rectangle.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6" align="center">
+            <h4 style="margin-top: 5em">Create a 3D prism.</h4><br>
+            <p>Select the Push/Pull tool.</p>
+            <p>Click on the face of the rectangle.</p>
+            <p>Move the cursor to pull the surface.</p>
+            <p>Click again to set the height of the prism.</p>
+        </div>
+        <div class="col-lg-6">
+            <img class="img-responsive" alt="" src="../Images/SketchUp/Pull Rectangle.gif" style="max-height: 450px; margin: 0px">
+        </div>
+    </div>
+    <div class="row" align="center" style="margin-top: 3%">
+        <h4 style="margin: auto">Moving in 3D spaces is important. You can move using 3 different tools: Zoom, Orbit, and Pan.</h4>
+    </div>
+    <div class="row" style="margin-top: 1%">
+        <div class="col-lg-4">
+            <p>The Zoom tool moves the model closer or further from your view. </p>
+            <img class="img-responsive" alt="" src="#" style="max-height: #; margin: 0px">
+        </div>
+        <div class="col-lg-4">
+            <p>The Orbit tool moves your view around the model. It will stay focused on one spot in the model.</p>
+            <img class="img-responsive" alt="" src="#" style="max-height: #; margin: 0px">
+        </div>
+        <div class="col-lg-4">
+            <p>The Pan tool moves your view from side to side, or up and down. It will not rotate.</p>
+            <img class="img-responsive" alt="" src="#" style="max-height: #; margin: 0px">
+        </div>
+    </div>
+</div> 
+<hr>    
+</div>
+
+    
+
+    
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+<form onsubmit="password(event)">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header row">
+          <div class="col-1">          
+              <button type="button" class="close" data-dismiss="modal" style="margin-top: 10px">&times;</button>
+          </div>
+          <div class="col-11">
+              <h4 class="modal-title">Boss Fight Ahead!</h4>
+          </div>
+        </div>
+        <div class="modal-body">
+            <!-- Password Form here -->
+          <p>Enter the magic word(s)...</p>
+          
+            <div class="form-group">
+              <label for="usr">Name:</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-default">It's Go-Time!</button>
+        </div>
+      </div>
+    </div>
+ </form>  
+  </div>
+   
+<!-- Password Script UNUSED FOR NOW, Add "onClick="passWord()"" to the Go-Time Button to use.-->
+<script>
+function password(e) {
+	e.preventDefault()
+	var usr = document.getElementById('usr').value
+	var pwd = document.getElementById('pwd').value
+	
+if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
+	window.location = "#"
+}else{
+	alert('wrong password or username')
+}
+} 
+    
+function bigImg(x) {
+    x.style.height = "60%";
+    
+}
+
+function normalImg(x) {
+    x.style.height = "50%";
+    
+}
+</script>
+    
+    
+</body>
+</html>
