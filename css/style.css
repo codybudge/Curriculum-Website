@@ -22,36 +22,36 @@ h1{
 
 h2{
     font-family: roboto !important;
-    font-size: 25px !important;
+    font-size: 35px !important;
     font-style: normal !important;
-    font-weight: 700 !important;
+    font-weight: 900 !important;
 	color: #1B8CCA !important;
 }
 
 h3{
     font-family: roboto !important;
-    font-size: 20px !important;
+    font-size: 32px !important;
     font-style: normal !important;
     font-weight: 700 !important;
 }
 
 h4{
     font-family: roboto !important;
-    font-size: 17px !important;
+    font-size: 28px !important;
     font-style: normal !important;
     font-weight: 700 !important;
 }
 
 h5{
     font-family: roboto !important;
-    font-size: 15px !important;
+    font-size: 22px !important;
     font-style: normal !important;
     font-weight: 600 !important;
 }
 
 p{
     font-family: roboto !important;
-    font-size: 15px !important;
+    font-size: 16px !important;
     font-stye: normal !important;
     font-weight: 600 !important;
 	text-decoration-color: #3D3D3D !important;
