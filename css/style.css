@@ -28,6 +28,10 @@ h2{
 	color: #1B8CCA !important;
 }
 
+h2.step{
+	margin-bottom: -25px;
+}
+
 h3{
     font-family: roboto !important;
     font-size: 32px !important;
@@ -40,6 +44,11 @@ h4{
     font-size: 28px !important;
     font-style: normal !important;
     font-weight: 700 !important;
+}
+
+h4.substep{
+	margin-left: 50px;
+	margin-top: 50px;
 }
 
 h5{
@@ -139,6 +148,10 @@ button.boss-fight{
 }
 div.well{
     margin: auto;
+}
+
+div.alert{
+	
 }
 
 .carousel-text {

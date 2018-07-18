@@ -42,25 +42,22 @@
 
 <!-- These are the titles and subtitles -->
 <div class="container-fluid container"> 
-    <h1>Quest 1 - Intro to Path</h1>
-    <h2>Step 1</h2>
-    <h3>What is step 1</h3>
+    <h1>h1 Quest Path, Number, and Title</h1>
+    <h2 class="step">h2 Step Number of class "step"</h2>
 </div>
                                         <!-- Code goes INSIDE div tag below -->
-<div class="container-fluid container">
-    <!-- Use the "row" class for div tags to make new rows-->
-    <div class="row">
-        <!-- Use <p> elements for instruction text. You can modify it to be more centered with margin style changes, using % values or "auto". -->
-        <p style="margin: auto">This is an example of instruction text</p>
+<div class="container-fluid container"> <!-- Each step is contained within its own container-fluid container class -->
+	<h4 class="substep">h4 substep of class "substep"</h4>
+    <div class="row"> <!-- Use the "row" class for div tags to make new rows-->
+        <div class="col-lg vcenter"> <!-- Use col-lg class columns to make the sections stack when scaled down -->
+			<h5 align="justify">
+				Instruction is placed in h5 tags, unless the text becomes too much. If the text is too big, then a 'p' tag can be used. Unless centered over something in a single line, text is justified. Align text vertically in a col by adding the vcenter class to the col
+			</h5>
+		</div>
+		<div class="col-lg">
+			<img class="img-responsive" alt="" src="../Images/geeko-app-270x270.jpg" style="max-height: 270; margin: 0px">
+		</div>
     </div>
-    <div class="row">
-        <!-- Create new row div elements to -->
-        <a href="#" style="margin: auto"> <!-- Keep the ?rel=0, and the other modifiers for the iframe tag. Only replace the address up until '?'. -->
-            <iframe src="https://www.youtube.com/embed/hN-Zvfhoplw?rel=0" allowfullscreen width="800px" height="450px"></iframe>
-        </a>
-    </div>
-    
-    
 </div>
 
 
@@ -112,20 +109,37 @@
  </form>  
   </div>
     
-<!-- Password Script -->
-<script>
-function password(e) {
-	e.preventDefault()
-	var usr = document.getElementById('usr').value
-	var pwd = document.getElementById('pwd').value
-	
-if(usr == "grant" || usr == "nik" && pwd == "ste@mlearn1ng"){
-	window.location = "#"
-}else{
-	alert('wrong password or username')
-}
-} 
-</script>
+<!-- Modal and Scripts -->
+<script src="../js/geeko.js"></script>    
+<a href="#" id="destination"></a> 
+    
+<div class="modal"  id="myModal" role="dialog">
+<form onsubmit="password(event)">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header row" style="margin-top: -3%; margin-bottom: -3%">
+              <h2 class="modal-title" align="center">Boss Fight Ahead!</h2>
+        </div>
+        <div class="modal-body" style="margin-top: -3%; margin-bottom: -3%">
+            <!-- Password Form here -->
+          <p>Unlocked by instructor</p>
+            <div class="form-group" style="margin-top: -3%; margin-bottom: -3%">
+              <label for="usr" style="margin-top: -3%; margin-bottom: -3%">Instructor:</label>
+              <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+              <label for="pwd" style="margin-top: 3%; margin-bottom: -3%">Password (no peeking):</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+        </div>
+        <div class="modal-footer" style="margin-top: -3%; margin-bottom: 0%">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Not quite yet...</button>
+          <button type="submit" class="btn btn-primary">It's Go-Time!</button>
+        </div>
+      </div>
+    </div>
+ </form>  
+</div>
     
 </body>
 </html>
