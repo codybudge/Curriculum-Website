@@ -28,15 +28,15 @@ h2{
 	color: #1B8CCA !important;
 }
 
-h2.step{
-	margin-bottom: -25px;
-}
-
 h3{
     font-family: roboto !important;
     font-size: 32px !important;
     font-style: normal !important;
     font-weight: 700 !important;
+}
+
+h3.step{
+	margin-bottom: -25px;
 }
 
 h4{
@@ -172,3 +172,31 @@ img.clickable:hover{
 box-shadow:         0px 0px 30px 0px #14A3AC;
 }
 
+div.carousel-images{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.carousel-instruction{
+	width: 600px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	box-shadow: 3px 3px 5px black;
+}
+
+div.carousel-inner div.well{
+	padding-bottom: 40px;
+}
+
+ol.carousel-indicators{
+	background-color: #6E6E71;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 5px 5px #6E6E71;
+}
