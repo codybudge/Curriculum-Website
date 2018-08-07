@@ -3,13 +3,13 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed;
+    public float speed = 1;
 
     private Rigidbody rb;
 
     void Start ()
     {
-        rb = GetComponent();
+        rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate ()
