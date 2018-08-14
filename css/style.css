@@ -150,6 +150,12 @@ div.well{
     margin: auto;
 }
 
+div.well div.materials{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background: white;
+}
+
 div.alert{
 	
 }
