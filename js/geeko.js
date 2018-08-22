@@ -6,10 +6,14 @@ function password(e) {
 	var usr = document.getElementById('usr').value;
 	var pwd = document.getElementById('pwd').value;
 	
-    if(usr == "grant" || usr == "nik" || usr == "rachel" || usr == "kyler" || usr == "connor" && pwd == "ste@mlearn1ng"){
-        window.location.href = destination;
+    if(usr == "grant" || usr == "nik" || usr == "rachel" || usr == "kyler" || usr == "connor" || usr == "alex" || usr == "cole"){
+		if(pwd == "Ste@mLearn1ng"){
+			window.location.href = destination;
+		}else{
+			alert('wrong password');
+		}
     }else{
-	   alert('wrong password or username' + destination);
+	   alert('wrong username');
     }
 } 
 

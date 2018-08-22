@@ -156,6 +156,13 @@ div.well div.materials{
 	background: white;
 }
 
+div.materials div.col-lg-3{
+	margin: auto;
+}
+div.row.materials.names{
+	padding-top: 35px;
+}
+
 div.alert{
 	
 }
