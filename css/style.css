@@ -127,6 +127,7 @@ div.site-brand-inner{
 
 .navbar{
     box-shadow: 0 2px 10px 0 #7E7E7E !important;
+	height: 90px;
 	overflow: hidden;
 	margin-top: -25px;
     background-color: white;
@@ -209,16 +210,20 @@ img.img-gif {
 
 }
 
+img.clickable{
+	transition: box-shadow 1.5s;
+}
+
 img.clickable:hover{
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
  	-webkit-box-shadow: 0px 0px 30px 0px #14A3AC;
 	-moz-box-shadow:    0px 0px 30px 0px #14A3AC;
-	box-shadow:         0px 0px 30px 0px #14A3AC;
+	box-shadow:         0px 0px 30px 10px #14A3AC;
 	-webkit-transition: box-shadow 0.5s;
 	-moz-transition: box-shadow 0.5s;
-	transition: box-shadow 0.5s;
+	transition: box-shadow 0.25s;
 }
 
 img.icon{
