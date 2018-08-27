@@ -291,6 +291,18 @@ div.carousel-inner div.well{
 	padding-bottom: 40px;
 }
 
+button.green{
+	background: #2E8E43; 
+	margin: auto; 
+	color: white; 
+	padding-top: 10px;
+	transition: box-shadow 300ms linear;
+}
+
+button.green:hover{
+	box-shadow: 0px 0px 30px 10px #fedc00;
+}
+
 ol.carousel-indicators{
 	background-color: #6E6E71;
 	display: flex;
