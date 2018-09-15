@@ -125,6 +125,57 @@ div.site-brand-inner{
 */
 }
 
+div.step1{
+	background-image: url(../Images/Backgrounds/Step1.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+
+div.step2{
+	background-image: url(../Images/Backgrounds/Step2.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+div.step3{
+	background-image: url(../Images/Backgrounds/Step3.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+div.step4{
+	background-image: url(../Images/Backgrounds/Step4.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+div.step5{
+	background-image: url(../Images/Backgrounds/Step5.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+div.step6{
+	background-image: url(../Images/Backgrounds/Step6.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+div.step7{
+	background-image: url(../Images/Backgrounds/Step7.png);
+    background-size: cover;
+    background-attachment: fixed;
+	padding-bottom: 60px;
+}
+div.border{
+    background-color: #7E7E7E;
+    background-size: cover;
+    height: 40px;
+	padding-top: 40px;
+}
+
+
 .navbar{
     box-shadow: 0 2px 10px 0 #7E7E7E !important;
 	height: 90px;
