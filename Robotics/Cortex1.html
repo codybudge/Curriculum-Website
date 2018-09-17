@@ -33,244 +33,262 @@
 </div>    
     
 <!--Body Content-->
-<div>
-<div class="container-fluid container" style="margin-bottom: 50px">
-    <h1>Cortex 1 - Intro to Robotics</h1>
-    <p align="justify">Cortex is a user-friendly, visual programming software that is used to program The Brain robotic microcontroller. Cortex and The Brain are compatible with Fischertechnik manipulatives, and can be combined into incredible robotic inventions. Cortex was developed locally as a means to teach programming logic without the need to learn a new language. Robotics is an ever-growing field, with more opportunities appearing every day. So whether it’s a DIY home project, or a multi-million dollar corporate project, robotics is everywhere. </p>
-    <h2>Step 1</h2>
-    <h3 class="step">BUILD A SIMPLE MOTOR STATION</h3>
-    <!-- INTRODUCTION (PRE-VIDEO SETUP) -->
-    <h4 class="substep">Gather the Fishertechnik parts you will be using.</h4>
-	<div class="well">	
-		<div class="row" style="padding-bottom: 15px">
-			<h4 style="margin: auto">Materials List</h4>
+<div class="step1">
+	<div class="container-fluid container" style="margin-bottom: 50px">
+		<h1>Cortex 1 - Intro to Robotics</h1>
+		<p align="justify">Cortex is a user-friendly, visual programming software that is used to program The Brain robotic microcontroller. Cortex and The Brain are compatible with Fischertechnik manipulatives, and can be combined into incredible robotic inventions. Cortex was developed locally as a means to teach programming logic without the need to learn a new language. Robotics is an ever-growing field, with more opportunities appearing every day. So whether it’s a DIY home project, or a multi-million dollar corporate project, robotics is everywhere. </p>
+		<h2>Step 1</h2>
+		<h3 class="step">BUILD A SIMPLE MOTOR STATION</h3>
+		<!-- INTRODUCTION (PRE-VIDEO SETUP) -->
+		<h4 class="substep">Gather the Fishertechnik parts you will be using.</h4>
+		<div class="well">	
+			<div class="row" style="padding-bottom: 15px">
+				<h4 style="margin: auto">Materials List</h4>
+			</div>
+			<div class="row materials">
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto">Building Block 30 (1)</h5>
+				</div>
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto" align="center">Building Block 15 with 2 Pins (1)</h5>
+				</div>
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto">DC Motor (2)</h5>
+				</div>
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto">Clip Adapter (2)</h5>
+				</div>
+			</div>
+			<div class="row materials">
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Building Block 30.png" style="max-height: 150px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Building Block 15 with 2 Pins.png" style="max-height: 150px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/DC Motor.png" style="max-height: 150px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Clip Adapter.png" style="max-height: 150px; margin: 0px">
+				</div>
+			</div>
+			<div class="row materials" style="padding-top: 35px" align="center">
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto" align="center">Motor Reducing Gearbox (2)</h5>
+				</div>
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto" align="center">Link 30 (2)</h5>
+				</div>
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto">Mounting Plate with Peg 30x45 (1)</h5>
+				</div>
+				<div class="col-lg-3 vcenter">
+					<h5 style="margin: auto">Gear Axle T20 (2)</h5>
+				</div>
+			</div>
+			<div class="row materials">
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Motor Reducing Gearbox.png" style="max-height: 150px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Link 30.png" style="max-height: 150px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Mounting Plate with Peg 30x45.png" style="max-height: 150px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Fish/Clip Axle with Gear Wheel T28.png" style="max-height: 150px; margin: 0px">
+				</div>
+			</div>
 		</div>
-		<div class="row materials">
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto">Building Block 30 (1)</h5>
-			</div>
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto" align="center">Building Block 15 with 2 Pins (1)</h5>
-			</div>
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto">DC Motor (2)</h5>
-			</div>
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto">Clip Adapter (2)</h5>
+		<h4 class="substep">Create the Simple Motor Station</h4>
+		<h5 align="justify">Below is a set of building instructions for the Simple Motor Station. Press the Play icon to see each animated step. Click and drag to turn the model, and use the mouse wheel to zoom in and out. When you finish each step, click the right arrow to move to the next one.</h5>
+		<div class="row">
+			<div id="SimpleMotorStation" class="carousel slide carousel-images" data-interval="false">
+				<!-- Indicators -->
+				<ol class="carousel-indicators" style="width: 200px">
+					<li data-target="#SimpleMotorStation" data-slide-to="0" class="active"></li>
+					<li data-target="#SimpleMotorStation" data-slide-to="1"></li>
+					<li data-target="#SimpleMotorStation" data-slide-to="2"></li>
+					<li data-target="#SimpleMotorStation" data-slide-to="3"></li>
+				</ol>
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/ef55275c75784feeab333b098ed9dfd4/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>
+						<div class="well">
+							<h3>1. Build the Base</h3>
+							<p>Attach the Base Plate and the Building Block 15 with 2 pins to the Building Block 30</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/dce334440cf945479c1d459cf8d90033/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>
+						<div class="well">
+							<h3>2. Attach the motors</h3>
+							<p>Slide each Motor onto a pin of the Building Block 30 with 2 pins.</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/ed2ab88adc6746cdb984b69711fdc1f2/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>
+						<div class="well">
+							<h3>3. Assemble the Gear Boxes</h3>
+							<p>Insert a Gear Axle into each Gear Box, then attach the Gear Boxes to the Motors so that the Axles are facing outwards</p>
+						</div>
+					</div>
+					
+					<div class="item">
+						<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/b346f0f0901e46f481bb567b31d92010/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>
+						<div class="well">
+							<h3>4. Finish the Simple Motor Station</h3>
+							<p>Slide 1 Link 30 into each Clip Adapter, then snap the Adapters onto the Clip Axles </p>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#SimpleMotorStation" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#SimpleMotorStation" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+				<span class="sr-only">Next</span>
+				</a>
 			</div>
 		</div>
-		<div class="row materials">
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Building Block 30.png" style="max-height: 150px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Building Block 15 with 2 Pins.png" style="max-height: 150px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/DC Motor.png" style="max-height: 150px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Clip Adapter.png" style="max-height: 150px; margin: 0px">
-			</div>
-		</div>
-		<div class="row materials" style="padding-top: 35px" align="center">
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto" align="center">Motor Reducing Gearbox (2)</h5>
-			</div>
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto" align="center">Link 30 (2)</h5>
-			</div>
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto">Mounting Plate with Peg 30x45 (1)</h5>
-			</div>
-			<div class="col-lg-3 vcenter">
-				<h5 style="margin: auto">Gear Axle T20 (2)</h5>
-			</div>
-		</div>
-		<div class="row materials">
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Motor Reducing Gearbox.png" style="max-height: 150px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Link 30.png" style="max-height: 150px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Mounting Plate with Peg 30x45.png" style="max-height: 150px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Fish/Clip Axle with Gear Wheel T28.png" style="max-height: 150px; margin: 0px">
-			</div>
-		</div>
+		
 	</div>
-	<h4 class="substep">Create the Simple Motor Station</h4>
-	<h5 align="justify">Below is a set of building instructions for the Simple Motor Station. Press the Play icon to see each animated step. Click and drag to turn the model, and use the mouse wheel to zoom in and out. When you finish each step, click the right arrow to move to the next one.</h5>
-	<div class="row">
-        <div id="SimpleMotorStation" class="carousel slide carousel-images" data-interval="false">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators" style="width: 200px">
-			<li data-target="#SimpleMotorStation" data-slide-to="0" class="active"></li>
-			<li data-target="#SimpleMotorStation" data-slide-to="1"></li>
-			<li data-target="#SimpleMotorStation" data-slide-to="2"></li>
-			<li data-target="#SimpleMotorStation" data-slide-to="3"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-			<div class="item active">
-			  <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/ef55275c75784feeab333b098ed9dfd4/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				</div>
-			  <div class="well">
-				<h3>1. Build the Base</h3>
-				<p>Attach the Base Plate and the Building Block 15 with 2 pins to the Building Block 30</p>
-			  </div>
+</div> 
+<div class="border"></div>
+<div class="step2">
+	<div class="container-fluid container" style="margin-bottom: 50px">
+		<h2>Step 2</h2>
+		<h3 class="step">GET STARTED WITH CORTEX</h3>
+		
+		<h4 class="substep">Create an account</h4>
+		<div class="row" style="margin-top: 3%">
+			<div class="col-lg-7">
+				<img class="img-responsive" alt="" src="../Images/Cortex/Cortex Profile.gif" style="max-height: #; margin: 0px">
 			</div>
-
-			<div class="item">
-			  <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/dce334440cf945479c1d459cf8d90033/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				</div>
-			  <div class="well">
-				<h3>2. Attach the motors</h3>
-				<p>Slide each Motor onto a pin of the Building Block 30 with 2 pins.</p>
-			  </div>
+			<div class="col-lg-5 vcenter">
+				<h5 align="justify">Open up cortex and click Play. Once open create a new user with your name and pick a color. Note: cortex profiles don’t transfer from computer to computer, so make sure to use the same computer every time!
+				</h5>
 			</div>
-
-			<div class="item">
-			  <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/ed2ab88adc6746cdb984b69711fdc1f2/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				</div>
-			  <div class="well">
-				<h3>3. Assemble the Gear Boxes</h3>
-				<p>Insert a Gear Axle into each Gear Box, then attach the Gear Boxes to the Motors so that the Axles are facing outwards</p>
-			  </div>
-			</div>
-			  
-			<div class="item">
-			  <div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/b346f0f0901e46f481bb567b31d92010/embed?camera=0&amp;transparent=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-				</div>
-			  <div class="well">
-				<h3>4. Finish the Simple Motor Station</h3>
-				<p>Slide 1 Link 30 into each Clip Adapter, then snap the Adapters onto the Clip Axles </p>
-			  </div>
-			</div>
-			
-		  </div>
-
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#SimpleMotorStation" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-			<span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#SimpleMotorStation" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-			<span class="sr-only">Next</span>
-		  </a>
 		</div>
+		<div class="row" style="margin-top: 3%">
+			<div class="col-lg-5 vcenter">
+				<h5 align="justify">Once you have your own profile create a new program and get familiar with the command drawers, we won’t be using them all at once but note how each command type has their own color.
+				</h5>
+			</div>
+			<div class="col-lg-7">
+				<img class="img-responsive" alt="" src="../Images/Cortex/New Project + Command Draws.gif" style="max-height: #; margin: 0px">
+			</div>
+		</div>
+		
 	</div>
-	
-</div> <hr><hr>
-<div class="container-fluid container" style="margin-bottom: 50px">
-	<h2>Step 2</h2>
-    <h3 class="step">GET STARTED WITH CORTEX</h3>
-	
-	<h4 class="substep">Create an account</h4>
-    <div class="row" style="margin-top: 3%">
-    	<div class="col-lg-7">
-			<img class="img-responsive" alt="" src="../Images/Cortex/Cortex Profile.gif" style="max-height: #; margin: 0px">
-		</div>
-		<div class="col-lg-5 vcenter">
-			<h5 align="justify">Open up cortex and click Play. Once open create a new user with your name and pick a color. Note: cortex profiles don’t transfer from computer to computer, so make sure to use the same computer every time!
-			</h5>
-		</div>
-    </div>
-	<div class="row" style="margin-top: 3%">
-    	<div class="col-lg-5 vcenter">
-			<h5 align="justify">Once you have your own profile create a new program and get familiar with the command drawers, we won’t be using them all at once but note how each command type has their own color.
-			</h5>
-		</div>
-		<div class="col-lg-7">
-			<img class="img-responsive" alt="" src="../Images/Cortex/New Project + Command Draws.gif" style="max-height: #; margin: 0px">
-		</div>
-    </div>
-	
-</div> <hr><hr>
-<div class="container-fluid container" style="margin-bottom: 50px">
-	<h2>Step 3</h2>
-	<h3>CONNECTING IT ALL TOGETHER</h3>
-	<h4 class="substep">Gather the robotics materials</h4>
-       <div class="well">	
-		<div class="row" style="padding-bottom: 15px">
-			<h4 style="margin: auto">Materials List</h4>
-		</div>
-		<div class="row materials">
-			<div class="col-lg-3" align="center">
-				<h5>Brain x1</h5>
+</div> 
+<div class="border"></div>
+<div class="step3">
+	<div class="container-fluid container" style="margin-bottom: 50px">
+		<h2>Step 3</h2>
+		<h3>CONNECTING IT ALL TOGETHER</h3>
+		<h4 class="substep">Gather the robotics materials</h4>
+		<div class="well">	
+			<div class="row" style="padding-bottom: 15px">
+				<h4 style="margin: auto">Materials List</h4>
 			</div>
-			<div class="col-lg-3" align="center">
-				<h5>Motor Cable x2</h5>
+			<div class="row materials">
+				<div class="col-lg-3" align="center">
+					<h5>Brain x1</h5>
+				</div>
+				<div class="col-lg-3" align="center">
+					<h5>Motor Cable x2</h5>
+				</div>
+				<div class="col-lg-3" align="center">
+					<h5>USB Cord x1</h5>
+				</div>
+				<div class="col-lg-3" align="center">
+					<h5>Battery x1</h5>
+				</div>
 			</div>
-			<div class="col-lg-3" align="center">
-				<h5>USB Cord x1</h5>
-			</div>
-			<div class="col-lg-3" align="center">
-				<h5>Battery x1</h5>
+			<div class="row materials">
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Cortex/Brain.png" style="max-height: 200px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Cortex/MotorCables.png" style="max-height: 200px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Cortex/USBcord.png" style="max-height: 200px; margin: 0px">
+				</div>
+				<div class="col-lg-3" align="center">
+					<img class="img-responsive" alt="" src="../Images/Cortex/Battery.png" style="max-height: 200px; margin: 0px">
+				</div>
 			</div>
 		</div>
-		<div class="row materials">
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Cortex/Brain.png" style="max-height: 200px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Cortex/MotorCables.png" style="max-height: 200px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Cortex/USBcord.png" style="max-height: 200px; margin: 0px">
-			</div>
-			<div class="col-lg-3" align="center">
-				<img class="img-responsive" alt="" src="../Images/Cortex/Battery.png" style="max-height: 200px; margin: 0px">
-			</div>
-		</div>
-	</div>
-	<h4 class="substep">Connecting all the parts</h4>
-    <div class="row" style="margin-top: 3%">
+		<h4 class="substep">Connecting all the parts</h4>
+		<div class="row" style="margin-top: 3%">
 			<a href="#" style="margin: auto">
-        		<iframe src="https://www.youtube.com/embed/rVt0XPt1Pcw?rel=0" allowfullscreen width="800px" height="450px"></iframe>
-        	</a>
-    </div>
-
-</div> <hr><hr>
-<div class="container-fluid container" style="margin-bottom: 50px">
-	<h2>Step 4</h2>
-	<h3>PROGRAMMING</h3>
-	<h4 class="substep">Creating your first program</h4>
-	<div class="row">
-		<h5 align="justify">Follow along bellow to create your first program. When using the num command the number we put in is a 10th of a second. Meaning 50 represents 5 seconds. Make sure to save your program and check your connect, after that compile and run.</h5>
+				<iframe src="https://www.youtube.com/embed/rVt0XPt1Pcw?rel=0" allowfullscreen width="800px" height="450px"></iframe>
+			</a>
+		</div>
+		
 	</div>
-	<div class="row">
-		<img class="img-responsive" alt="" src="../Images/Cortex/Program1.gif" style="max-height: #; margin: 0px">
+</div> 
+<div class="border"></div>
+<div class="step4">
+	<div class="container-fluid container" style="margin-bottom: 50px">
+		<h2>Step 4</h2>
+		<h3>PROGRAMMING</h3>
+		<h4 class="substep">Creating your first program</h4>
+		<div class="row">
+			<h5 align="justify">Follow along bellow to create your first program. When using the num command the number we put in is a 10th of a second. Meaning 50 represents 5 seconds. Make sure to save your program and check your connect, after that compile and run.</h5>
+		</div>
+		<div class="row">
+			<img class="img-responsive" alt="" src="../Images/Cortex/Program1.gif" style="max-height: #; margin: 0px">
+		</div>
+		
+		<h4 class="substep">Setting Motor Power</h4>
+		<div class="row">
+			<h5 align="justify">For our second program and a new motor command so our program knows we’re only talking to motor A, then use the set power command and the slider to set motor’s A power to 50%. Next save the program as a new program, “Project2”.</h5>
+		</div>
+		<div class="row">
+			<img class="img-responsive" alt="" src="../Images/Cortex/Program2.gif" style="max-height: #; margin: 0px">
+		</div>
+		
 	</div>
+</div> 
+<div class="border"></div>
+<div class="step5">
+	<div class="container-fluid container" style="margin-bottom: 50px">
+		<br> 
+		<h2>Step 5</h2>
+		<h3>Design a robot</h3>
+		<h4 class="substep" style="margin-top: 30px">Re-Design the Simple Motor Station </h4>
+		<div class="row">
+			<h5 style="margin: 50px">Create a new Motor testing station for two spinning motors. The Clip Adapter can be used to attach to the pin of any Fischertechnik piece. Use this knowledge to create a robot with spinning arms.</h5>
+		</div>
+		<div class="row">
+			<div class="col-lg-3" style="margin: auto"><h4>1.</h4><h5>The arms should be at least 120cm in length</h5></div>
+			<div class="col-lg-3" style="margin: auto"><h4>2.</h4><h5>The testing center should be at least 150cm tall</h5></div>
+			<div class="col-lg-3" style="margin: auto"><h4>3.</h4><h5>The motors' direction can be any way you choose</h5></div>
+		</div>
+		
+		
+		<div class="row" style="margin-top: 40px"><h4 style="margin: auto">When you are complete, create a program to demonstrate the new motor station</h4></div>
+	</div>
+</div> 
 	
-	<h4 class="substep">Setting Motor Power</h4>
-	<div class="row">
-		<h5 align="justify">For our second program and a new motor command so our program knows we’re only talking to motor A, then use the set power command and the slider to set motor’s A power to 50%. Next save the program as a new program, “Project2”.</h5>
-	</div>
-	<div class="row">
-		<img class="img-responsive" alt="" src="../Images/Cortex/Program2.gif" style="max-height: #; margin: 0px">
-	</div>
-	
-</div> <hr><hr>
-<div class="container-fluid container" style="margin-bottom: 50px">
-	<br> 
-	<h2>Step 5</h2>
-	<h3>Design a robot</h3>
-	<h4 class="substep" style="margin-top: 30px">Re-Design the Simple Motor Station </h4>
-	<div class="row">
-		<h5>Create a new Motor testing station for two spinning motors. The Clip Adapter can be used to attach to the pin of any Fischertechnik piece. Use this knowledge to create a robot with spinning arms.</h5>
-	</div>
-	<br><br><br>
-  </div> 
-	
-	
-
-<hr><hr>
+<div class="border"></div>
 <div class="container-fluid container">
     <div class="container-fluid row">
         <div class="col" align="center">
@@ -280,9 +298,8 @@
         </div>
     </div>
 </div>   
-</div>
-	
 
+	
 <!-- Modal and Scripts -->
 <script src="../js/geeko.js"></script>    
 <a href="Cortex1BF.html" id="destination"></a> 

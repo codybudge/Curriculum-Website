@@ -37,264 +37,275 @@
 </div>    
     
 <!--Body Content-->
-<div>
-<div class="container-fluid container">
-    <h1 style="margin-bottom: 2%">Web Development 3 - Interactive Webpages</h1>
-	
-	<h5 align="justify">Webpages allow you to add any kind of information that you want, but they can also be used to allow users to interact with them! In this quest you'll create a page that uses the actions from the user to change what the page looks like. Most websites also have more than one page, so you will create multiple pages that can be navigated to and from. Get ready to rock with your interactive webpages!</h5>
-	
-    <h2 style="margin-top: 3%">Step 1</h2>
-    <h3>SET UP</h3>
-    <!-- INTRODUCTION (PRE-VIDEO SETUP) -->
-    <div class="container-fluid row">
-            <h4 style="margin: 2%">Go to your folder in the File Browser and create a new Folder called "PopUpGeeko"</h4>
-    </div>
-    <div class="row well">
-		<div class="col-lg-4" style="padding-top: 10%; margin-left: 5%">
-			<h5>Right-click on the folder to bring up its options.</h5>
-			<br>
-			<h5>Select "Open with Code" or "Open in Visual Studio" to open the project using Visual Studios Code. </h5>
+<div class="step1">
+	<div class="container-fluid container">
+		<h1 style="margin-bottom: 2%">Web Development 3 - Interactive Webpages</h1>
+		
+		<h5 align="justify">Webpages allow you to add any kind of information that you want, but they can also be used to allow users to interact with them! In this quest you'll create a page that uses the actions from the user to change what the page looks like. Most websites also have more than one page, so you will create multiple pages that can be navigated to and from. Get ready to rock with your interactive webpages!</h5>
+		
+		<h2 style="margin-top: 3%">Step 1</h2>
+		<h3>SET UP</h3>
+		<!-- INTRODUCTION (PRE-VIDEO SETUP) -->
+		<div class="container-fluid row">
+			<h4 style="margin: 2%">Go to your folder in the File Browser and create a new Folder called "PopUpGeeko"</h4>
 		</div>
-		<div class="col">
-    		<img class="img-responsive" alt="" src="../Images/WebDev/NewProject.gif" style="max-height: 400px; margin: 0px; box-shadow: 0px 0px 1px black">
-    	</div>
+		<div class="row well">
+			<div class="col-lg-4" style="padding-top: 10%; margin-left: 5%">
+				<h5>Right-click on the folder to bring up its options.</h5>
+				<br>
+				<h5>Select "Open with Code" or "Open in Visual Studio" to open the project using Visual Studios Code. </h5>
+			</div>
+			<div class="col">
+				<img class="img-responsive" alt="" src="../Images/WebDev/NewProject.gif" style="max-height: 400px; margin: 0px; box-shadow: 0px 0px 1px black">
+			</div>
+		</div>
+		
+		<div class="container-fluid row" style="margin-top: 5%; margin-bottom: 3%">
+			<h4 style="margin: auto">Make two subfolders to keep your code separate.</h4>
+			<p></p>
+		</div>
+		<div class="container-fluid row">
+			<div class="col-lg" align="center"><br>
+				<h5>Create a new folder and name it "html".</h5><br>
+				<h5>Add a new file named "PopUpGeeko.html"</h5>
+				<img class="img-responsive" alt="" src="../Images/WebDev/NewFolderNewHtml.gif" style="max-height: 350px; margin: 0px">
+			</div>
+			<div class="col-lg" align="center" style="margin-bottom: 3%"><br>
+				<h5>Create a new folder and name it "css".</h5><br>
+				<h5>Add a new file named "PopUpGeekoStyle.css"</h5>
+				<img class="img-responsive" alt="" src="../Images/WebDev/NewFolderNewCss.gif" style="max-height: 350px; margin: 0px">
+			</div>
 	</div>
-	
-    <div class="container-fluid row" style="margin-top: 5%; margin-bottom: 3%">
-		<h4 style="margin: auto">Make two subfolders to keep your code separate.</h4>
-		<p></p>
 	</div>
-	<div class="container-fluid row">
-    	<div class="col-lg" align="center"><br>
-			<h5>Create a new folder and name it "html".</h5><br>
-			<h5>Add a new file named "PopUpGeeko.html"</h5>
-            <img class="img-responsive" alt="" src="../Images/WebDev/NewFolderNewHtml.gif" style="max-height: 350px; margin: 0px">
-        </div>
-        <div class="col-lg" align="center" style="margin-bottom: 3%"><br>
-			<h5>Create a new folder and name it "css".</h5><br>
-			<h5>Add a new file named "PopUpGeekoStyle.css"</h5>
-            <img class="img-responsive" alt="" src="../Images/WebDev/NewFolderNewCss.gif" style="max-height: 350px; margin: 0px">
-        </div>
 </div>
-</div>
-	<hr >
-<div class="container-fluid container">	
+<div class="border"></div>
+<div class="step2">
+	<div class="container-fluid container">	
 		<h2>Step 2</h2>
 		<h3>STARTING OUR HTML FILE</h3>
-	<div class="container-fluid row">
-		<h5 style="margin-bottom: 3%">Now let’s start the HTML file by setting up the head and body. Select the PopUpGeeko.html tab to edit it.</h5>
-	</div>
-    <div class="container-fluid row" style="margin-bottom: 5%">
-        <div class="col vcenter"><img class="img-responsive" alt="" src="../Images/WebDev/htmlSetup.gif" style="max-height: 350px; margin: 0px"></div>
-        <div class="col">
-            <img class="img-responsive" alt="" src="../Images/WebDev/htmlSetupDone.png" style="max-height: 270px; margin: 0px">
-            <p align="justify" style="margin-left: 20%; margin-right: 20%; margin-top: 2%">Comments are made with "<em style="color: blue">&lt;!--</em>" and "<em style="color: blue">--&gt;</em>". Anything between these is ignored.</p>
-        </div>
-    </div>
-    <div class="row well">
-        <div class="col">
-        	<p align="justify">Add a <em style="color: blue">&lt;link&gt;</em> tag to connect this HTML to the CSS. This is like a telepathic connection between the webpage, and the CSS file named in the "href".</p>
-        	<p> <em style="color: blue">href=””</em> &nbsp;tells our html file where to find our css file.</p>
-            <p> <em style="color: blue">rel=””</em> specifies the relationship between our html file and the css file.</p>
-            <p><em style="color: blue">../css/PopUpGeekoStyle.css</em> navigates you back one folder then takes you to your css folder and then to your css file. <em>BE SURE to include the "<em style="color: blue">..</em>" before the first slash.</em>
-            </p>
-        </div>
-        <div class="col vcenter"><img class="img-responsive" alt="" style="margin: 0; max-height: 150px" src="../Images/WebDev/HtmlHead.png"></div>
-    </div>
-    <div class="row " style="margin-top: 5%; margin-bottom: 5%">
-    	<h4 style="color: red; margin: auto">BEFORE CONTINUING, PRESS "CTRL+S" TO SAVE YOUR PROGRESS!</h4>
-		<h5 style="margin: auto">Changes only take effect if they are saved. Make a habit of saving often.</h5>
-    </div>
-</div>
-	<hr>
-<div class="container-fluid container">
-	<h2>STEP 3</h2>
-	<h3>STARTING OUR CSS FILE</h3>
-	<h5>Use CSS to modify the way that HTML code looks on a webpage. Click the "PopUpGeekoStyle.css" tab.</h5>
-    <div class="container-fluid row">
-        <div class="col">
-            <p align="justify" style="margin-top: 8% "><em>Type selectors</em> will apply to the <em>type</em> of object that they share a name with. Our type selectors are for all things within the &lt;body&gt; and &lt;h1&gt; elements.</p>
-            <p align="justify">I.D. selectors can be applied to any element, not just certain types of elements. Css I.D. selectors have a "<em>#</em>" symbol in front of them.</p>
-            <p align="justify">Now create the Type and ID selectors. Our I.D. selectors are #title{} and #gameholder{}. Ignore the green squigglies.</p>
-        </div>
-        <div class="col">
-            <img class="img-responsive" alt="" src="../Images/WebDev/CssStep3.png" style="max-height: 250px; margin: 10px">
-        </div>
-    </div>
-    <div class="container-fluid row" style="margin-top: 5%">
-        <h4 style="margin: auto">Add the code shown below to the CSS file.</h4>
-    </div>
-    <div class="container-fluid row well" style="margin-top: 3%; margin-bottom: 3%">
-        <div class="col vcenter">
-            <p align="center" style="margin-right: 20px">When typing CSS make sure to include a semicolon (";") after any line that isn't a bracket.</p><p>Use <em style="color: blue">/*</em> to begin a comment, and <em style="color: blue">*/</em> to close it. Its the same way that "<em style="color: blue">&lt;!--</em>" &amp; "<em style="color: blue">--&gt;</em>" work for HTML.</p>
-        </div>
-	
-        <div class="col vcenter">
-            <img class="img-responsive" alt="" src="../Images/WebDev/CssBodyHeader.png" style="max-height: 325px; margin: 0px">
-        </div>
-        <div class="col vcenter">
-            <p>“#B7DADD” and “#188CCA” are called hex colors, these are a 6 digit codes representing the color values. “#B7DADD” is a shade of blue, and “#188CCA” is a lighter shade of blue.</p>
-        </div>
-	</div>
-	
-	</div>
-	<hr>
-	<div class="container-fluid container" style="margin-top: 3%">
-	<h2>Step 4</h2>
-	<h3>ADDING IMAGES AND STYLES</h3>
-	<div class="row" style="margin-top: 3%">
-		<div class="col-lg-6 vcenter" style="margin-left: 8%">
-			<h5>Create a new folder within your project called "Images"</h5>
-		</div>		
-		<div class="col-lg">
-			<img class="img-responsive" alt="" src="../Images/WebDev/images folder.gif" style="max-height: 200px; margin: 0px">
+		<div class="container-fluid row">
+			<h5 style="margin-bottom: 3%">Now let’s start the HTML file by setting up the head and body. Select the PopUpGeeko.html tab to edit it.</h5>
 		</div>
-	</div>
-	<div class="row well" align="center" style="margin-top: 3%">
-		<h3 style="margin-bottom: 2%">You'll need some images to continue. Click here to download what you need to your PopUpGeeko folder.</h3>
-		<a href="../Coding/Downloads/PopUpGeekoImages.zip" download style="margin: auto"><button class="btn-lg btn-primary"><h5>Download Pop Up Geeko Images</h5></button></a><br>
-	</div>
-	<div class="row" style="margin-top: 5%">
-		<div class="col-lg vcenter" align="right">
-			<div>
-			<h5>Go to the "Downloads" folder of the computer</h5><br>
-			<h5>Right-click on "PopUpGeekoImages.zip"</h5><br>
-			<h5>Select "Extract All"</h5><br>
-			<h5>Click "Browse"</h5><br>
-			<h5>Find and select your "Images" folder</h5><br>
-			<h5>Click "Select Folder" and "Extract"</h5><br>
-			<h5>Close all file browser windows</h5>
+		<div class="container-fluid row" style="margin-bottom: 5%">
+			<div class="col vcenter"><img class="img-responsive" alt="" src="../Images/WebDev/htmlSetup.gif" style="max-height: 350px; margin: 0px"></div>
+			<div class="col">
+				<img class="img-responsive" alt="" src="../Images/WebDev/htmlSetupDone.png" style="max-height: 270px; margin: 0px">
+				<p align="justify" style="margin-left: 20%; margin-right: 20%; margin-top: 2%">Comments are made with "<em style="color: blue">&lt;!--</em>" and "<em style="color: blue">--&gt;</em>". Anything between these is ignored.</p>
 			</div>
 		</div>
-		<div class="col-lg" style="margin-left: 3%; margin-right: 3%">
-			<img class="img-responsive" alt="" src="../Images/WebDev/unzip.gif" style="max-height: inherit; margin: 0px">
-		</div>
-	</div>
-	<div class="row well" style="margin-top: 5%">
-		<div class="col-lg-4" style="margin-left: 12%">
-			<img class="img-responsive" alt="" src="../Images/WebDev/imagesuccess.JPG" style="max-height: 300px; margin: 0px">
-		</div>
-		<div class="col-lg-5 vcenter" align="justify">
-			<h4>The "Images" folder in Visual Studio should now have all of these images</h4>
-		</div>
-	</div>
-	<div class="row " style="margin-top: 5%">
-    	<div class="col-lg-6 vcenter">
-    		<h5 align="justify">Add this code to the #title ID selector. This code sets the height, width, and background image of any HTML element tagged with "title" - AND it makes the element stay centered within the elements it is placed. </h5>
-    	</div>
-    	<div class="col-lg-6">
-			<img class="img-responsive" alt="" src="../Images/WebDev/CssTitle.png" style="max-height: 250px; margin: 0px">
-		</div>
-    </div>
-	
-    <div class="row well" style="margin-top: 5%">
-		<div class="col">
-			<img class="img-responsive" alt="" src="../Images/WebDev/cssGameHolder.png" style="max-height: 140px; margin: 20px">
-		</div>
-		<div class="col vcenter">
-			<h5 align="justify" >Add this code to the final ID selector, #gameholder. This ID tag is intended to be used on the element that contains the part of the site where we will put the game.</h5>
-		</div>
-    </div>
-</div>
-	<hr>
-<div class="container-fluid container" style="margin-top: 3%">
-	<h2>Step 5</h2>
-	<h3>STATE SELECTORS</h3>
-	<h5 align="justify">Now we will add more specific styles to parts of the webpage, based on what they user does with them! The main tool the user has is the mouse, so we'll use the state of an object based on the mouse movement and input. "Hover" is the state of an HTML element when the cursor is over it, and "Active" is when it's clicked.</h5>
-    
-	<br>
-    <div class="row" style="margin-top: 5%">
-    	<div class="vcenter col-lg-3" style="margin-left: 12%">
-    		<div>
-    		<h5 align="justify">Add the class selector for each geeko class. </h5><br>
-    		<p align="justify">Note: both geekos use the same “qmark.png” and “mound.png”.</p>
-    		</div>
-		</div>
-    	<div class="col-lg-7">
-			<img class="img-responsive" alt="" src="../Images/WebDev/geeko and vamp.PNG" style="max-width: 550px; margin: 0px"><br>
-		</div>
-    	</div>
-    <div class="row" style="margin-top: 5%">
-    	<h4 align="center">Now That all the IDs and classes have been defined in the CSS file we can add them to the HTML file. Make sure your title and geeko goes inside your gameholder.</h4>
-    	<img class="img-responsive" alt="" src="../Images/WebDev/HtmlBody.png" style="max-height: 450px">	
-		</div>
-    <div class="row">
-    	<h4 class="substep">Open up your HTML file as a webpage</h4>
-    </div>
-	<div class="row">
-    	<h5 style="margin: auto; margin-top: 1%">It should look like this</h5>
-    </div>
-	<div class="row">
-		<img class="img-responsive" alt="" src="../Images/WebDev/moundspage.PNG" style="max-height: 550px; margin: 30px">
-	</div>
-    </div>
-</div>
-<hr>
-<div class="container-fluid container">
-	<h2>Step 6</h2>
-	<h3>MAKING THE PAGE INTERACTIVE</h3>
-	<div class="row">
-		<h4 class="substep">Add new selectors for different states</h4>
-	</div>
-	<div class="row well" style="margin-top: 1%">
-		<div class="col-lg-4 vcenter">
-			<div>
-				<h5 align="justify" style="margin: 15%">An object's state describes what is happening to it. States are written behind the class selector with a colon ":"</h5>
-				<h5 align="justify" style="margin: 15%">Add a "hover" and "active" state for the "geeko" and the "geekoVampire" classes</h5>
+		<div class="row well">
+			<div class="col">
+				<p align="justify">Add a <em style="color: blue">&lt;link&gt;</em> tag to connect this HTML to the CSS. This is like a telepathic connection between the webpage, and the CSS file named in the "href".</p>
+				<p> <em style="color: blue">href=””</em> &nbsp;tells our html file where to find our css file.</p>
+				<p> <em style="color: blue">rel=””</em> specifies the relationship between our html file and the css file.</p>
+				<p><em style="color: blue">../css/PopUpGeekoStyle.css</em> navigates you back one folder then takes you to your css folder and then to your css file. <em>BE SURE to include the "<em style="color: blue">..</em>" before the first slash.</em>
+				</p>
 			</div>
+			<div class="col vcenter"><img class="img-responsive" alt="" style="margin: 0; max-height: 150px" src="../Images/WebDev/HtmlHead.png"></div>
 		</div>
-		<div class="col-lg-4">
-			<img class="img-responsive" alt="" src="../Images/WebDev/cssStates.PNG" style="max-height: 550px; margin: 0px">
+		<div class="row " style="margin-top: 5%; margin-bottom: 5%">
+			<h4 style="color: red; margin: auto">BEFORE CONTINUING, PRESS "CTRL+S" TO SAVE YOUR PROGRESS!</h4>
+			<h5 style="margin: auto">Changes only take effect if they are saved. Make a habit of saving often.</h5>
 		</div>
-		<div class="col-lg-4 vcenter">
-			<div>
-				<h5 align="justify" style="margin: 15%">You'll end up with three different selectors for "geeko", and three different selectors for "geekoVampire"</h5>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<h4 class="substep">Save and Test</h4>
-	</div>
-	<div class="row" style="margin-bottom: 5%">
-		<img class="img-responsive" alt="" src="../Images/WebDev/geekoInteractive.gif" style="max-height: inherit; margin: 0px">
 	</div>
 </div>
-<hr>
-<div class="container-fluid container">
-	<h2>Step 7</h2>
-	<h3>MULTIPLE PAGE WEBSITE</h3>
-	<h4 class="substep">Add a second HTML file as a second page</h4>
+<div class="border"></div>
+<div class="step3">
 	<div class="container-fluid container">
-		<div class="row">
-			<div class="col-lg-4">
-				<img class="img-responsive" alt="" src="../Images/WebDev/WinPage.gif" style="max-height: inherit; margin: 0px">
+		<h2>STEP 3</h2>
+		<h3>STARTING OUR CSS FILE</h3>
+		<h5>Use CSS to modify the way that HTML code looks on a webpage. Click the "PopUpGeekoStyle.css" tab.</h5>
+		<div class="container-fluid row">
+			<div class="col">
+				<p align="justify" style="margin-top: 8% "><em>Type selectors</em> will apply to the <em>type</em> of object that they share a name with. Our type selectors are for all things within the &lt;body&gt; and &lt;h1&gt; elements.</p>
+				<p align="justify">I.D. selectors can be applied to any element, not just certain types of elements. Css I.D. selectors have a "<em>#</em>" symbol in front of them.</p>
+				<p align="justify">Now create the Type and ID selectors. Our I.D. selectors are #title{} and #gameholder{}. Ignore the green squigglies.</p>
 			</div>
-			<div class="col-lg vcenter">
+			<div class="col">
+				<img class="img-responsive" alt="" src="../Images/WebDev/CssStep3.png" style="max-height: 250px; margin: 10px">
+			</div>
+		</div>
+		<div class="container-fluid row" style="margin-top: 5%">
+			<h4 style="margin: auto">Add the code shown below to the CSS file.</h4>
+		</div>
+		<div class="container-fluid row well" style="margin-top: 3%; margin-bottom: 3%">
+			<div class="col vcenter">
+				<p align="center" style="margin-right: 20px">When typing CSS make sure to include a semicolon (";") after any line that isn't a bracket.</p><p>Use <em style="color: blue">/*</em> to begin a comment, and <em style="color: blue">*/</em> to close it. Its the same way that "<em style="color: blue">&lt;!--</em>" &amp; "<em style="color: blue">--&gt;</em>" work for HTML.</p>
+			</div>
+			
+			<div class="col vcenter">
+				<img class="img-responsive" alt="" src="../Images/WebDev/CssBodyHeader.png" style="max-height: 325px; margin: 0px">
+			</div>
+			<div class="col vcenter">
+				<p>“#B7DADD” and “#188CCA” are called hex colors, these are a 6 digit codes representing the color values. “#B7DADD” is a shade of blue, and “#188CCA” is a lighter shade of blue.</p>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div class="border"></div>
+<div class="step4">
+	<div class="container-fluid container">
+		<h2>Step 4</h2>
+		<h3>ADDING IMAGES AND STYLES</h3>
+		<div class="row" style="margin-top: 3%">
+			<div class="col-lg-6 vcenter" style="margin-left: 8%">
+				<h5>Create a new folder within your project called "Images"</h5>
+			</div>		
+			<div class="col-lg">
+				<img class="img-responsive" alt="" src="../Images/WebDev/images folder.gif" style="max-height: 200px; margin: 0px">
+			</div>
+		</div>
+		<div class="row well" align="center" style="margin-top: 3%">
+			<h3 style="margin-bottom: 2%">You'll need some images to continue. Click here to download what you need to your PopUpGeeko folder.</h3>
+			<a href="../Coding/Downloads/PopUpGeekoImages.zip" download style="margin: auto"><button class="btn-lg btn-primary"><h5>Download Pop Up Geeko Images</h5></button></a><br>
+		</div>
+		<div class="row" style="margin-top: 5%">
+			<div class="col-lg vcenter" align="right">
 				<div>
-					<h5>Select the HTML file in your explorer window, and click the new file icon to create an icon in the same folder. </h5>
-					<br>
-					<h5>Name the new HTML file "VampireGeeko.html"</h5>
+					<h5>Go to the "Downloads" folder of the computer</h5><br>
+					<h5>Right-click on "PopUpGeekoImages.zip"</h5><br>
+					<h5>Select "Extract All"</h5><br>
+					<h5>Click "Browse"</h5><br>
+					<h5>Find and select your "Images" folder</h5><br>
+					<h5>Click "Select Folder" and "Extract"</h5><br>
+					<h5>Close all file browser windows</h5>
+				</div>
+			</div>
+			<div class="col-lg" style="margin-left: 3%; margin-right: 3%">
+				<img class="img-responsive" alt="" src="../Images/WebDev/unzip.gif" style="max-height: inherit; margin: 0px">
+			</div>
+		</div>
+		<div class="row well" style="margin-top: 5%">
+			<div class="col-lg-4" style="margin-left: 12%">
+				<img class="img-responsive" alt="" src="../Images/WebDev/imagesuccess.JPG" style="max-height: 300px; margin: 0px">
+			</div>
+			<div class="col-lg-5 vcenter" align="justify">
+				<h4>The "Images" folder in Visual Studio should now have all of these images</h4>
+			</div>
+		</div>
+		<div class="row " style="margin-top: 5%">
+			<div class="col-lg-6 vcenter">
+				<h5 align="justify">Add this code to the #title ID selector. This code sets the height, width, and background image of any HTML element tagged with "title" - AND it makes the element stay centered within the elements it is placed. </h5>
+			</div>
+			<div class="col-lg-6">
+				<img class="img-responsive" alt="" src="../Images/WebDev/CssTitle.png" style="max-height: 250px; margin: 0px">
+			</div>
+		</div>
+		
+		<div class="row well" style="margin-top: 5%">
+			<div class="col">
+				<img class="img-responsive" alt="" src="../Images/WebDev/cssGameHolder.png" style="max-height: 140px; margin: 20px">
+			</div>
+			<div class="col vcenter">
+				<h5 align="justify" >Add this code to the final ID selector, #gameholder. This ID tag is intended to be used on the element that contains the part of the site where we will put the game.</h5>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="border"></div>
+<div class="step5">
+	<div class="container-fluid container">
+		<h2>Step 5</h2>
+		<h3>STATE SELECTORS</h3>
+		<h5 align="justify">Now we will add more specific styles to parts of the webpage, based on what they user does with them! The main tool the user has is the mouse, so we'll use the state of an object based on the mouse movement and input. "Hover" is the state of an HTML element when the cursor is over it, and "Active" is when it's clicked.</h5>
+		
+		<br>
+		<div class="row" style="margin-top: 5%">
+			<div class="vcenter col-lg-3" style="margin-left: 12%">
+				<div>
+					<h5 align="justify">Add the class selector for each geeko class. </h5><br>
+					<p align="justify">Note: both geekos use the same “qmark.png” and “mound.png”.</p>
+				</div>
+			</div>
+			<div class="col-lg-7">
+				<img class="img-responsive" alt="" src="../Images/WebDev/geeko and vamp.PNG" style="max-width: 550px; margin: 0px"><br>
+			</div>
+		</div>
+		<div class="row" style="margin-top: 5%">
+			<h4 align="center">Now That all the IDs and classes have been defined in the CSS file we can add them to the HTML file. Make sure your title and geeko goes inside your gameholder.</h4>
+			<img class="img-responsive" alt="" src="../Images/WebDev/HtmlBody.png" style="max-height: 450px">	
+		</div>
+		<div class="row">
+			<h4 class="substep">Open up your HTML file as a webpage</h4>
+		</div>
+		<div class="row">
+			<h5 style="margin: auto; margin-top: 1%">It should look like this</h5>
+		</div>
+		<div class="row">
+			<img class="img-responsive" alt="" src="../Images/WebDev/moundspage.PNG" style="max-height: 550px; margin: 30px">
+		</div>
+	</div>
+</div>
+
+<div class="border"></div>
+<div class="step6">
+	<div class="container-fluid container">
+		<h2>Step 6</h2>
+		<h3>MAKING THE PAGE INTERACTIVE</h3>
+		<div class="row">
+			<h4 class="substep">Add new selectors for different states</h4>
+		</div>
+		<div class="row well" style="margin-top: 1%">
+			<div class="col-lg-4 vcenter">
+				<div>
+					<h5 align="justify" style="margin: 15%">An object's state describes what is happening to it. States are written behind the class selector with a colon ":"</h5>
+					<h5 align="justify" style="margin: 15%">Add a "hover" and "active" state for the "geeko" and the "geekoVampire" classes</h5>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<img class="img-responsive" alt="" src="../Images/WebDev/cssStates.PNG" style="max-height: 550px; margin: 0px">
+			</div>
+			<div class="col-lg-4 vcenter">
+				<div>
+					<h5 align="justify" style="margin: 15%">You'll end up with three different selectors for "geeko", and three different selectors for "geekoVampire"</h5>
 				</div>
 			</div>
 		</div>
-		<h4 class="substep">Add the new page's code</h4>
-		<div class="row well">
-			<h5 align="justify">The new page doesn't need much, because most of the work has already been done in the CSS file. Your "VampireGeeko.html" should end up looking like this</h5>
-			<img class="img-responsive" alt="" src="../Images/WebDev/HtmlVampirePage.png" style="max-height: 400px; margin: 0px">
-		</div>
-		<h4 class="substep">Bridge the two pages</h4>
 		<div class="row">
-			
-				<h5 align="justify">Before we are all done we need to modify PopUpGeeko.html to link the new file. Instead of having a invisible link like when we use with the &lt;link&gt; tag with our css file we are going to create a hyperlink using the &lt;a&gt; tag this sends us to the webpage we just created. Insteading of having a text hyperlink we are going to use our geekoVampire class so our game still functions.</h5>
-			
-				<img class="img-responsive" alt="" src="../Images/WebDev/HtmlBodyModified.png" style="max-height: inherit; margin: 0px">
-			
+			<h4 class="substep">Save and Test</h4>
+		</div>
+		<div class="row" style="margin-bottom: 5%">
+			<img class="img-responsive" alt="" src="../Images/WebDev/geekoInteractive.gif" style="max-height: inherit; margin: 0px">
 		</div>
 	</div>
 </div>
-	
-    <hr>
-    <hr>
+<div class="border"></div>
+<div class="step7">
+	<div class="container-fluid container">
+		<h2>Step 7</h2>
+		<h3>MULTIPLE PAGE WEBSITE</h3>
+		<h4 class="substep">Add a second HTML file as a second page</h4>
+		<div class="container-fluid container">
+			<div class="row">
+				<div class="col-lg-4">
+					<img class="img-responsive" alt="" src="../Images/WebDev/WinPage.gif" style="max-height: inherit; margin: 0px">
+				</div>
+				<div class="col-lg vcenter">
+					<div>
+						<h5>Select the HTML file in your explorer window, and click the new file icon to create an icon in the same folder. </h5>
+						<br>
+						<h5>Name the new HTML file "VampireGeeko.html"</h5>
+					</div>
+				</div>
+			</div>
+			<h4 class="substep">Add the new page's code</h4>
+			<div class="row well">
+				<h5 align="justify">The new page doesn't need much, because most of the work has already been done in the CSS file. Your "VampireGeeko.html" should end up looking like this</h5>
+				<img class="img-responsive" alt="" src="../Images/WebDev/HtmlVampirePage.png" style="max-height: 400px; margin: 0px">
+			</div>
+			<h4 class="substep">Bridge the two pages</h4>
+			<div class="row">
+				
+				<h5 align="justify">Before we are all done we need to modify PopUpGeeko.html to link the new file. Instead of having a invisible link like when we use with the &lt;link&gt; tag with our css file we are going to create a hyperlink using the &lt;a&gt; tag this sends us to the webpage we just created. Insteading of having a text hyperlink we are going to use our geekoVampire class so our game still functions.</h5>
+				
+				<img class="img-responsive" alt="" src="../Images/WebDev/HtmlBodyModified.png" style="max-height: inherit; margin: 0px">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="border"></div>
 <div class="container-fluid container">
     <div class="container-fluid row">
         <div class="col" align="center">
